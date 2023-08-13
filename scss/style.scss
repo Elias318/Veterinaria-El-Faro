@@ -1,4 +1,12 @@
 @import"./base/reset.scss" ;
+@import "./utilities/variables.scss";
+@import "./utilities/mixins.scss";
 @import "./layout/main.scss";
 @import"./paginas/index.scss";
+@import"./paginas/servicios.scss";
+@import "./paginas/preguntasFrec.scss";
+@import "./paginas/nosotros.scss";
 @import "./layout/nav.scss";
+@import "./layout/footer.scss";
+@import "./components/botones.scss";
+@import "./base/typo.scss";

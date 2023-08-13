@@ -1,0 +1,9 @@
+@mixin testimonios{
+    background-image: url("/images/fondo-Seccion-Comentarios.png");
+   
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}

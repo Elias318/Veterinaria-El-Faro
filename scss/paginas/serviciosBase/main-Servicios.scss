@@ -1,0 +1,45 @@
+
+
+#banner-Servicios{
+    display: flex;
+    justify-content: center;
+    align-items: end;
+    background-image: url("/images/bannerServicios.png");
+    background-position: center;
+    background-repeat: no-repeat;
+    width: 100%;
+    height:100%;
+    #LetrasServiciosBanner{
+        width: 300px;
+        
+    }
+}
+
+#contenedorServicios-Servicios{
+    
+    display: flex;
+    flex-direction: column;
+    margin-top: 20px;
+    .serviciosIndividual{
+        display: flex;
+        justify-content: center;
+        margin-right: 40px;
+        margin-left: 40px;
+        margin-bottom: 30px;
+        .contTexto-Servicios{
+            width: 100%;
+            padding-left: 50px;
+            
+            p{
+                color: map-get($paleta-colores, "azulOscuro" );
+                strong{
+                    font-size: 20px;
+                    display: block;
+                    
+                }
+            }
+            
+        }
+        
+    }
+}

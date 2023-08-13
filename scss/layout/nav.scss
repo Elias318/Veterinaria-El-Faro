@@ -1,13 +1,39 @@
 //MOBILE
+.logo{
+    margin-left: 20px;
+}
 
 @media only screen and (max-width:767px){
     //INDEX
-    .redes{
-        margin-top: 20px;
-        display: flex;
-        justify-content: space-around;
+   
+    
+
+    #navbarNavAltMarkup{
+        
+        
+
+        .navbar-nav{
+            width: 50%;
+        }
+        .redes{
+            text-align: center;
+            width: 100%;
+            margin-top: 20px;
+            display: flex;
+            justify-content: space-around;
+            .texto-Icono-Redes{
+                text-align: center;
+                color: aliceblue;
+            }
+            
+        }
         
     }
 
 
 }
+
+.navbar{
+    width: 100%;
+}
+
