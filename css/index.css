@@ -16,8 +16,10 @@
   font-family: 'Inter', sans-serif;
   font-weight: 400; }
 
-@media only screen and (max-width: 927px) {
+@media only screen and (max-width: 990px) {
   #inicioFaro {
+    position: relative;
+    overflow: hidden;
     display: flex;
     justify-content: center;
     align-items: end;
@@ -62,10 +64,10 @@
     width: 100%;
     height: 323.53px; }
   #contenedorMarcas-Inicio {
-    background-image: url("/images/fondoMarcas.png");
-    background-position: -380px 0px;
-    background-size: cover;
-    background-attachment: fixed;
+    background: url("/images/fondoMarcas.png");
+    background-size: 1200px 750px;
+    background-position: center center;
+    background-repeat: no-repeat;
     height: 100%; }
     #contenedorMarcas-Inicio #contenedorMarcas {
       width: 100%;
@@ -280,18 +282,37 @@
         #contenedorFiguraCaraPerro #formularioContacto form .formTextBasico {
           height: 80px; } }
 
-.navbar {
-  background-color: #012559 !important; }
-  .navbar a {
-    color: #FFFFFF; }
-  .navbar .navbar-toggler {
-    border-color: #FFFFFF; }
-    .navbar .navbar-toggler .navbar-toggler-icon {
-      line-height: 1.4rem;
-      border-color: #FFFFFF;
-      background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3e%3cpath stroke='rgba%28255, 255, 255, 0.55%29' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e"); }
+@media only screen and (min-width: 995px) and (max-width: 1199px) {
+  #inicioFaro {
+    background-image: url("/images/fondoMobileInicio.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    align-items: end;
+    width: 100%;
+    height: 752.04px; }
+    #inicioFaro .contenedorBtnReservarTurno {
+      width: 100%;
+      display: flex;
+      justify-content: center; } }
+
+.navbar a {
+  color: #FFFFFF; }
+
+.navbar .navbar-toggler {
+  border-color: #FFFFFF; }
+  .navbar .navbar-toggler .navbar-toggler-icon {
+    line-height: 1.4rem;
+    border-color: #FFFFFF;
+    background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3e%3cpath stroke='rgba%28255, 255, 255, 0.55%29' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e"); }
 
 #banner-Servicios {
+  position: relative;
+  overflow: hidden;
   display: flex;
   justify-content: center;
   align-items: end;
@@ -299,7 +320,7 @@
   background-position: center;
   background-repeat: no-repeat;
   width: 100%;
-  height: 100%; }
+  height: 54vh; }
   #banner-Servicios #LetrasServiciosBanner {
     width: 300px; }
 
@@ -324,13 +345,15 @@
 
 #contenedorBanner-PreguntasFrec {
   display: flex;
+  position: relative;
+  overflow: hidden;
   justify-content: center;
   align-items: end;
   background-image: url("/images/bannerPreguntasFrec.png");
   background-position: center;
   background-repeat: no-repeat;
   width: 100%;
-  height: 460px; }
+  height: 56vh; }
 
 #contenedorSecciones-PreguntasFrec {
   display: flex;
@@ -351,6 +374,8 @@
     background-repeat: no-repeat; }
 
 #bannerNosotros {
+  position: relative;
+  overflow: hidden;
   background-image: url("/images/bannerNosotros.png"); }
 
 #contenedorDatosDoc {
@@ -554,24 +579,100 @@
   to {
     transform: scale(1, 1); } }
 
-.logo {
-  margin-left: 20px; }
+#banner-Contacto {
+  position: relative;
+  overflow: hidden;
+  background-image: url("/images/banner-contacto.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  height: 55vh; }
 
-@media only screen and (max-width: 767px) {
-  #navbarNavAltMarkup .navbar-nav {
-    width: 50%; }
-  #navbarNavAltMarkup .redes {
-    text-align: center;
-    width: 100%;
-    margin-top: 20px;
+/*************************NAV HECHA A MANO*********************/
+.contenedorNav {
+  background: transparent;
+  position: absolute;
+  width: 100%;
+  top: 0;
+  left: 0;
+  display: flex;
+  justify-content: space-between;
+  padding: 2rem;
+  background-color: #012559; }
+  .contenedorNav .logo {
+    width: 25vw;
+    max-width: 18rem;
+    max-height: 18rem;
+    align-items: center; }
+  .contenedorNav .abrir-menu {
+    display: none; }
+  .contenedorNav .cerrar-menu {
+    display: none; }
+  .contenedorNav .nav-list {
+    list-style-type: none;
+    gap: 1rem;
     display: flex;
-    justify-content: space-around; }
-    #navbarNavAltMarkup .redes .texto-Icono-Redes {
-      text-align: center;
-      color: aliceblue; } }
+    align-items: center; }
+    .contenedorNav .nav-list a {
+      font-size: 1.5rem;
+      font-family: 'Inter', sans-serif;
+      font-weight: 400;
+      text-decoration: none;
+      color: #FFFFFF; }
+  .contenedorNav .redes {
+    display: flex;
+    align-items: center;
+    gap: 1rem; }
 
-.navbar {
-  width: 100%; }
+@media only screen and (max-width: 990px) {
+  /*NAV HECHA A MANO */
+  .contenedorNav {
+    background-color: transparent; }
+    .contenedorNav .abrir-menu {
+      background: transparent;
+      display: block;
+      border: 0;
+      font-size: 3rem;
+      color: black;
+      cursor: pointer; }
+    .contenedorNav .abrir-De-Menu {
+      background: transparent;
+      display: block;
+      border: 0;
+      font-size: 3rem;
+      cursor: pointer;
+      color: #FFFFFF; }
+    .contenedorNav .cerrar-menu {
+      display: block;
+      align-items: end;
+      border: 0;
+      font-size: 3rem;
+      background-color: #012559;
+      color: #FFFFFF;
+      text-align: end;
+      cursor: pointer; }
+    .contenedorNav .nav {
+      position: absolute;
+      opacity: 0;
+      visibility: hidden;
+      display: flex;
+      gap: 1rem;
+      position: absolute;
+      top: 0;
+      right: 0;
+      bottom: 0;
+      flex-direction: column;
+      background-color: #012559;
+      padding: 2rem; }
+      .contenedorNav .nav .nav-list {
+        flex-direction: column;
+        align-items: end; }
+      .contenedorNav .nav .redes {
+        align-items: center;
+        justify-content: center; }
+    .contenedorNav .visible {
+      position: fixed;
+      opacity: 1;
+      visibility: visible; } }
 
 .fontMontserrat {
   font-family: 'Montserrat', sans-serif;
@@ -605,7 +706,7 @@ footer {
   footer #contenedorInfo-Footer {
     margin: 30px 25px 0; }
 
-@media only screen and (max-width: 859px) {
+@media only screen and (max-width: 990px) {
   #contenedorInfo-Footer {
     display: flex; }
     #contenedorInfo-Footer .contenedorBloqueInfo1-Footer {

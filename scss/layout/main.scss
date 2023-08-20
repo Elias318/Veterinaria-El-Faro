@@ -4,9 +4,11 @@
 
 //VISTA MOBILE 
 
-@media only screen and (max-width:927px){
+@media only screen and (max-width:990px){
     //INDEX
     #inicioFaro{
+        position: relative;
+        overflow: hidden;
         display: flex;
         justify-content: center;
         align-items: end;
@@ -73,10 +75,11 @@
     #contenedorMarcas-Inicio{
         
         
-        background-image: url("/images/fondoMarcas.png");
-        background-position: -380px 0px ;
-        background-size: cover;
-        background-attachment: fixed;
+        background: url("/images/fondoMarcas.png");
+        background-size: 1200px 750px;
+        background-position: center center;
+        background-repeat: no-repeat;
+        
         height: 100%;
         #contenedorMarcas{
             width: 100%;
@@ -452,8 +455,30 @@
 
 
 //TABLET
-@media only screen and (min-width:928px) and (max-width:1199px){
-//     //INDEX
+@media only screen and (min-width:995px) and (max-width:1199px){
+//INDEX
+    #inicioFaro{
+        background-image: url("/images/fondoMobileInicio.png");
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: center;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-between;
+        align-items: end;
+        width: 100%;
+        height:752.04px;
+        .contenedorBtnReservarTurno{
+           width: 100%; 
+           display: flex;
+           justify-content: center;
+        }
+    }
+
+
+
+
 }
 
 

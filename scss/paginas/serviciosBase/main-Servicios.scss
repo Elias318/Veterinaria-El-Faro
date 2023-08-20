@@ -1,6 +1,8 @@
 
 
 #banner-Servicios{
+    position:relative;
+    overflow: hidden; 
     display: flex;
     justify-content: center;
     align-items: end;
@@ -8,7 +10,7 @@
     background-position: center;
     background-repeat: no-repeat;
     width: 100%;
-    height:100%;
+    height: 54vh;
     #LetrasServiciosBanner{
         width: 300px;
         

@@ -1,39 +1,138 @@
-//MOBILE
-.logo{
-    margin-left: 20px;
-}
 
-@media only screen and (max-width:767px){
-    //INDEX
-   
-    
 
-    #navbarNavAltMarkup{
-        
-        
+.contenedorNav{
+    background: transparent;
+    position: absolute;
+    width:100%;
+     top: 0;
+     left: 0;
+     
+     
+     display: flex;
+     justify-content: space-between;
+     padding: 2rem;
+     background-color: #012559;
+ 
+     
+ 
+     .logo{
+        width: 25vw;
+        max-width: 18rem;
+        max-height: 18rem;
+         align-items: center;
 
-        .navbar-nav{
-            width: 50%;
-        }
-        .redes{
-            text-align: center;
-            width: 100%;
-            margin-top: 20px;
-            display: flex;
-            justify-content: space-around;
-            .texto-Icono-Redes{
-                text-align: center;
-                color: aliceblue;
-            }
-            
-        }
-        
+         
     }
-
-
+ 
+    .abrir-menu{
+        display: none;
+    }
+    .cerrar-menu{
+        display: none;
+    }
+ 
+    .nav-list{
+        list-style-type: none;
+        gap: 1rem;
+        display: flex;
+        align-items: center;
+        a{
+            font-size: 1.5rem;
+            font-family: 'Inter', sans-serif;
+            font-weight: 400;
+            text-decoration: none;
+            color:#FFFFFF ; 
+        }
+    }
+ 
+    .redes{
+        display: flex;
+        align-items: center;
+        gap: 1rem;
+    }
 }
+ 
+ 
+@media only screen and (max-width:990px){
+ 
+     
+    /*NAV HECHA A MANO */
+    .contenedorNav{
+         
+        background-color: transparent;
+        .abrir-menu{
+            background: transparent;
+            display: block;
+            border: 0;
+            font-size: 3rem;
+             
+            color: black;
+            cursor: pointer;
+             
+        }
 
-.navbar{
-    width: 100%;
-}
+        .abrir-De-Menu{
+            background: transparent;
+            display: block;
+            border: 0;
+            font-size: 3rem;
+            
 
+            cursor: pointer;
+            color: #FFFFFF;
+        }
+        .cerrar-menu{
+             
+            display: block;
+            align-items: end;
+            border: 0;
+            font-size: 3rem;
+            background-color: #012559;
+            color: #FFFFFF;
+            text-align: end;
+            cursor: pointer;
+        }
+         
+        .nav{
+            position: absolute;
+            opacity: 0;
+            visibility: hidden;
+ 
+             
+            display: flex;
+            gap: 1rem;
+            position: absolute;
+            top: 0;
+            right: 0;
+            bottom: 0;
+            flex-direction: column;
+            background-color:#012559 ;
+            padding: 2rem;
+ 
+             
+             
+             
+            .nav-list{
+                flex-direction: column;
+                align-items: end;
+                 
+            }
+ 
+            .redes{
+                align-items: center;
+                justify-content: center;
+            }
+         }
+ 
+        .visible{
+            position: fixed;
+            opacity: 1;
+            visibility: visible;
+        }
+ 
+    }
+ 
+     
+     
+ }
+ 
