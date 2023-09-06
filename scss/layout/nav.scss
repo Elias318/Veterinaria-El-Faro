@@ -31,6 +31,7 @@
         display: none;
     }
  
+    
     .nav-list{
         list-style-type: none;
         gap: 1rem;
@@ -49,11 +50,30 @@
         display: flex;
         align-items: center;
         gap: 1rem;
+        div{
+            box-shadow: 6px 6px 10px;
+            border-radius: 50%;
+        }
     }
 }
+
+
+.efecto-1{
+    transition: 1s;
+}
+
+.efecto-1:hover {
+    transform: translateY(-3px) scale(1.1);
+    
+
+}
+
+.active{
+    color: orange !important;
+}
+
  
- 
-@media only screen and (max-width:990px){
+@media only screen and (max-width:921px){
  
      
     /*NAV HECHA A MANO */
@@ -128,11 +148,178 @@
             position: fixed;
             opacity: 1;
             visibility: visible;
+            z-index: 1;
         }
  
     }
  
      
      
- }
+}
+
+
+
+//TABLET
+
+@media only screen and (min-width:922px) and (max-width:1199px){
+    .contenedorNav{
+        background: transparent;
+        position: absolute;
+        width:100%;
+        top: 0;
+        left: 0;
+        display: flex;
+        justify-content: space-between;
+        padding: 1rem;
+        
+     
+         
+     
+        .logo{
+            width: 15vw;
+            max-width: 18rem;
+            max-height: 18rem;
+            align-items: center;
+            justify-content: center;
+    
+             
+        }
+     
+        .abrir-menu{
+            display: none;
+        }
+        .cerrar-menu{
+            display: none;
+        }
+        .nav{
+            display: flex;
+           
+        }
+        .nav-list{
+            list-style-type: none;
+            gap: 1rem;
+            display: flex;
+            align-items: center;
+            margin-right: 2rem;
+            .aNav{
+                position: relative;
+                
+                font-family: 'Inter', sans-serif;
+                font-weight: 400;
+                text-decoration: none;
+                color:#FFFFFF ; 
+            }
+        }
+        .aNav:after{
+            content:"";
+            position: absolute;
+            background-color: #FFFFFF;
+            height: 3px;
+            width: 0;
+            left: 0;
+            bottom: -10px;
+           transition: 0.3s;
+        }
+        .aNav:hover:after{
+            width: 100%;
+              
+        }
+     
+        .redes{
+            display: flex;
+            align-items: center;
+            gap: 1rem;
+            margin-left: 2rem;
+        }
+    }
+}
+
+@media only screen and (min-width:1200px){
+    .abrir-menu{
+        display: none;
+    }
+    .cerrar-menu{
+        display: none;
+    }
+    .contenedorNav{
+        background: transparent;
+        position: absolute;
+        width:100%;
+        top: 0;
+        left: 0;
+        display: flex;
+        justify-content: space-around;
+        padding: 2rem;
+        
+     
+         
+     
+        .logo{
+            width: 15vw;
+            max-width: 18rem;
+            max-height: 18rem;
+            align-items: center;
+            justify-content: center;
+    
+             
+        }
+     
+        
+        .nav{
+            display: flex;
+            width: 100%;
+            justify-content: space-around;
+        }
+        .nav-list{
+            list-style-type: none;
+            gap: 1rem;
+            display: flex;
+            align-items: center;
+            justify-content: start;
+            
+            .aNav{
+                position: relative;
+                font-size: 1.5rem;
+                font-family: 'Inter', sans-serif;
+                font-weight: 400;
+                text-decoration: none;
+                color:#FFFFFF ; 
+            }
+        }
+        .aNav:after{
+            content:"";
+            position: absolute;
+            background-color: #FFFFFF;
+            height: 3px;
+            width: 0;
+            left: 0;
+            bottom: -10px;
+           transition: 0.3s;
+        }
+        .aNav:hover:after{
+            width: 100%;
+              
+        }
+        
+        
+        .redes{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 1rem;
+           
+            img{
+                width: 2.5vw;
+            }
+        }
+    }
+    
+}
+
+
+
+
+
+
+
  

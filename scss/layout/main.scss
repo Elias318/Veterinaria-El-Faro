@@ -4,7 +4,7 @@
 
 //VISTA MOBILE 
 
-@media only screen and (max-width:990px){
+@media only screen and (max-width:767px){
     //INDEX
     #inicioFaro{
         position: relative;
@@ -14,12 +14,22 @@
         align-items: end;
         width: 100%;
         height:652.04px;
-        background-image: url("/images/fondoMobileInicio.png");
+        background-image: url("/images/banner_Inicio.png");
         background-size: cover;
         background-repeat: no-repeat;
         background-position: center;
        
-            
+        .tituloInicio{
+            height: 100%;
+            display: flex;
+            position: absolute;
+            align-items: center;
+            justify-content: center;
+            z-index: 0;
+            img{
+                width: 20rem;
+            }
+        }
         
        
     }
@@ -76,17 +86,23 @@
         
         
         background: url("/images/fondoMarcas.png");
-        background-size: 1200px 750px;
-        background-position: center center;
+        background-size: 180% 85%;
+        background-position: center bottom;
         background-repeat: no-repeat;
         
         height: 100%;
         #contenedorMarcas{
             width: 100%;
             display: flex;
+            flex-wrap: wrap;
             flex-direction: column;
             justify-content: center;
             align-items: center;
+           
+                img{
+                    width: 20rem;
+                }
+            
             #marca3{
                 margin-top: 55px;
                 margin-bottom: 55px;
@@ -95,7 +111,7 @@
         .tituloMarcas-Inicio{
             padding-top: 50px;
             padding-left: 20px;
-            width: 45%;
+            width: 50%;
             text-align: center;
             font-size: 30px;
             color: map-get($paleta-colores, "azulOscuro" );
@@ -113,9 +129,39 @@
 
     //******************************************
 
+    #banner-Servicios{
+        position:relative;
+        overflow: hidden; 
+        display: flex;
+        justify-content: center;
+        align-items: end;
+        background-image: url("/images/bannerServicios.png");
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+        width: 100%;
+        height: 52vh;
+        #LetrasServiciosBanner{
+            width: 300px;
+            
+        }
+    }
+
     #contenedorServicios-Servicios{
         background-image: url("/images/fondoPaginaServicios.png");
-        background-position: left;
+        background-size: 100% 100%;
+        background-position: center center;
+        background-repeat: no-repeat;
+       .serviciosIndividual{
+        margin-bottom: 4rem;
+        display: flex;
+        gap: 1rem;
+        width: 100%;
+        img{
+            height: 10vh;
+            margin-left: 4px;
+        }
+       }
     }
 
 
@@ -124,6 +170,54 @@
         //PAGINA PREGUNTAS FRECUENTES
 
     //******************************************
+
+
+    #contenedorBanner-PreguntasFrec{
+        display: flex;
+        position: relative;
+        overflow: hidden;
+        justify-content: center;
+        align-items: end;
+        background-image: url("/images/bannerPreguntasFrec.png");
+        background-position: center;
+        background-repeat: no-repeat;
+        width: 100%;
+        height: 63vh;
+        box-shadow: 0 9px 20px;
+    }
+    
+    #contenedorSecciones-PreguntasFrec{
+        
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        
+    
+        
+        #contenedorVacunacion-PreguntasFrec{
+            background-color: #0861AE;
+            background-image: url("/images/backVacunacion-PreguntasFrec.png");
+            background-repeat: no-repeat;
+            
+            
+        }
+    
+        #contenedorDesparacitacion-PreguntasFrecuentes{
+            background-color: #F4F4F4;
+            background-image: url("/images/backLupa-PreguntasFrec.png");
+            background-repeat: no-repeat;
+            
+    
+           
+        }
+    
+        #contenedorCastraciones-PreguntasFrec{
+            background-color: #0861AE;
+            background-image: url("/images/backEtetoscopio-PreguntasFrec.png");
+            background-repeat: no-repeat;
+        }
+    }
     #contenedorSecciones-PreguntasFrec{
         section{
             .tituloContenedorBlanco-PreguntasFrec{
@@ -145,7 +239,7 @@
                 justify-content: end;
                 align-items: end;
                 .contenedorPreguntas-Respuestas-Blanco{
-                    width: 50%;
+                    width: 60%;
                     display: flex;
                     flex-direction: column;
                     align-items: star;
@@ -170,7 +264,7 @@
                     
                 }
                 .contenedorPreguntas-Respuestas-Azul{
-                    width: 50%;
+                    width: 60%;
                     display: flex;
                     flex-direction: column;
                     align-items: start;
@@ -212,28 +306,31 @@
     //******************************************
 
     #bannerNosotros{
-       
+        background-image: url("/images/bannerNosotros.png");
         height: 340px;
         background-repeat: no-repeat;
         background-position: center;
+      
+        box-shadow: 0 9px 20px;
     }
 
     #contenedorBloqueQuienesSomos-Nosotros{
         
         width: 100%;
         display: flex;
+        flex-direction: column;
         justify-content: center;
+        align-items: center;
         margin-top: 60px;
         margin-bottom: 60px;
     
         #contenedorQuienesSomos-Nosotros{
-            padding-left: 50px;
-            width: 50%;
             span{
-                font-size: 24px;
+                padding: 2rem;
+                font-size: 26px;
             }
             p{
-                width: 100%;
+                padding: 2rem;  
                 font-family: 'Inter', sans-serif;
                 font-weight: 400;
                 font-size: 22px;
@@ -249,6 +346,657 @@
             img{
                 width: 250px;
                 height: 150px;
+            }
+        }
+        
+    }
+    
+
+    #contenedorBloqueFotoYDatosDoc{
+        
+        
+        #fondoColorFotoYDatosDoc{
+            background-color: #102770;
+
+            height: 100%;
+            #contenedorImagenDoc{
+                display: flex;
+                justify-content: center;
+                img{
+                    
+                    height: 30rem;
+                }
+            }
+
+            
+           
+        }
+
+
+        #contenedorDatosDoc{
+            margin-top: 40px;
+            .itemDatos{
+                display: flex;
+                margin-bottom: 40px;
+                width: 75%;
+                .contenedorParrafoItemDatos{
+                    p{
+                        font-family: 'Inter', sans-serif;
+                        font-weight: 400;
+                        color: aqua;
+                        font-size: 23px;
+                    }
+                }
+            }
+        }
+        
+
+        .imgCarrusel{
+            width: 100px;
+            
+        }
+    }
+
+    .testimonios{
+        @include testimonios;
+        background-position: center;
+        background-size: 98% 95%;
+        background-repeat: no-repeat;
+    }
+
+
+
+    .contenedor-titulo-Comentarios{
+        width: 100%;
+        margin-top: 50px;
+        margin-bottom: 40px;
+        
+        display: flex;
+        justify-content: start;
+        span{
+            margin-left: 30px;
+            font-size: 25px;
+            color: #012559;
+        }
+        
+    }
+
+
+    
+   //******************************************
+
+        //PAGINA CONTACTO
+
+    //******************************************
+    #banner-Contacto{
+        width: 100%;
+        position: relative;
+        overflow: hidden;
+        background-image: url("/images/banner-contacto.png");
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+        height: 30vh;
+        box-shadow: 0 9px 20px;
+    }
+
+        #contenedorInfo-Contacto{
+            padding-top: 3rem;
+            padding-left: 2rem;
+            background-color: #102770;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            width: 100%;
+
+            .contenedorBloques-Info{
+                width: 100%;
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+                
+
+                
+                .contenedorBloqueInfo1-Footer{
+                    width: 500px;
+                }
+                .contenedorBloqueInfo2-Footer{
+                    width: 500px;
+                }
+                
+                .bloqueDeInformacion-Contacto{
+                   margin-bottom: 3rem;
+                    .iconoInfo-Footer{
+                        display: flex;
+                       
+                        
+                        img{
+                            padding-left: .4rem;
+                            width: 50px;
+                            height: 50px;
+                            display: flex;
+                            justify-content: center;
+                            align-items: center;
+                        }
+                        
+                    }
+                    .contTexto-Info{
+                        display: flex;
+                        align-items: center;
+                        margin-left: 10px;
+                        
+                        .pTexto-Info{
+                            width: 100%;
+                            font-size: 17px;
+                            margin: 0 0 0;
+                            color:aliceblue;
+                            strong{
+                                font-size: 20px;
+                                color:aliceblue;
+                            }
+                        }
+                        
+                    }
+                    .contTexto-Info2{
+                       
+                        margin-left: 10px;
+                        .pTexto-Info{
+                            
+                            font-size: 17px;
+                            margin: 0 0 0;
+                            color:aliceblue;
+                            strong{
+                                font-size: 20px;
+                                color:aliceblue;
+                                display: block;
+                            }
+                        }
+                    }
+                }
+
+            
+            }
+            
+            
+        }
+       
+       
+    
+
+
+        
+    #contenedorFiguraCaraPerro{
+        background-color: #FF7F00;
+       
+        
+        width: 100%;
+        height: 650px;
+
+       
+        #formularioContacto{
+            
+            padding-top: 10px;
+            padding-bottom: 20px;
+            height: 100%;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            span{
+                font-size: 30px;
+                margin-bottom: 30px;
+                color: map-get($paleta-colores, "azulOscuro" );
+            }
+            form{
+                display: flex;
+                flex-direction: column;
+                
+                .formBasico{
+                    width: 350px;
+                    height: 50px;
+                    padding: .8rem 1rem;
+                    margin-bottom: 2rem;
+                    border-radius: 10px;
+                    
+                    
+                }
+                .formTextBasico{
+                    height: 80px;
+                }
+
+                
+            }
+        }
+    }
+
+
+    &::placeholder{
+        font-size: 20px;
+        color: #FF7F00;
+        font-family: 'Montserrat', sans-serif;
+        font-weight: 400;
+    }
+
+    
+
+
+}
+
+
+    ////////////////////////////////////************TABLET****************/////////////////////////////////////////////////////
+    
+    @media only screen and (min-width:768px) and (max-width:1199px){
+    //INDEX
+    #inicioFaro{
+        position: relative;
+        overflow: hidden;
+        display: flex;
+        justify-content: center;
+        align-items: end;
+        width: 100%;
+        height:102vh;
+        background-image: url("/images/banner_Inicio.png");
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: center;
+    
+         
+        .tituloInicio{
+            height: 100%;
+            display: flex;
+            position: absolute;
+            align-items: center;
+            justify-content: center;
+            img{
+                width: 20rem;
+            }
+        }
+    
+    }
+
+    .contenedor_contenedorIconosServicios-Inicio1{
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        
+        .contenedorIconosServicios-Inicio1{
+            width: 100%;
+            display: flex;
+            justify-content: space-around;
+            margin-top: 70px;
+            .itemServicios-inicio{
+              
+                text-align: center;
+                height: 100%;
+                width: 100.98px;
+                display: flex;
+                flex-direction: column;
+                img{
+                    height: 14vh;
+                }
+                .textoIcono{
+                   margin-top: 20px;
+                }
+                
+            }
+        }
+    }
+    #contenedorServiciosInicio{
+        background-image: url("/images/patitasSeccionServicio-Inicio.png");
+        background-size: 100vw;
+       background-position: center;
+        background-repeat: no-repeat;
+        width: 100%;
+        height: 60vh;
+
+        
+        #contenedorBtnMostrarMas{
+            margin-top: 50px;
+            display: flex;
+            justify-content: center;
+        }
+        .tituloServicio-Inicio{
+            padding-top: 50px;
+            padding-left: 60px;
+            font-size: 30px;
+            color: map-get($paleta-colores, "azulOscuro" );
+        }
+    }
+
+
+
+    #contenedorNosotros-Inicio{
+        background-image:url("/images/bannerNosotros.png") ;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        width: 100%;
+        height:50vh ;
+    }
+    
+
+    #contenedorMarcas-Inicio{
+        
+        
+        background: url("/images/fondoMarcas.png");
+        background-size: 1200px 750px;
+        background-position: center center;
+        background-repeat: no-repeat;
+        
+        height: 100%;
+        #contenedorMarcas{
+            width: 100%;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            #marca3{
+                margin-top: 55px;
+                margin-bottom: 55px;
+            }
+        }
+        .tituloMarcas-Inicio{
+            padding-top: 50px;
+            padding-left: 20px;
+            width: 45%;
+            text-align: center;
+            font-size: 30px;
+            color: map-get($paleta-colores, "azulOscuro" );
+        }
+    }
+
+    
+    #contenedorMarcas-Inicio{
+        
+        
+        background: url("/images/fondoMarcas.png");
+        background-size: 1200px 750px;
+        background-position: center center;
+        background-repeat: no-repeat;
+        
+        height: 70vh;
+        #contenedorMarcas{
+            margin-top: 5rem;
+            width: 100%;
+            display: flex;
+            flex-direction: row;
+            justify-content: space-around;
+            align-items: center;
+            img{
+                width: 30vw;
+            }
+            #marca3{
+                margin-top: 55px;
+                margin-bottom: 55px;
+               
+            }
+        }
+        .tituloMarcas-Inicio{
+            padding-top: 50px;
+            padding-left: 20px;
+            width: 45%;
+            text-align: center;
+            font-size: 35px;
+            color: map-get($paleta-colores, "azulOscuro" );
+        }
+    }
+
+    #contenedorMapa-Inicio{
+        width: 100%;
+        iframe{
+            width: 100%;
+        }
+    }
+
+
+
+    /***************************** SERVICIOS ****************************************/
+    #banner-Servicios{
+        position:relative;
+        overflow: hidden; 
+        display: flex;
+        justify-content: center;
+        align-items: end;
+        background-image: url("/images/bannerServicios.png");
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+        width: 100%;
+        height: 52vh;
+        #LetrasServiciosBanner{
+            width: 300px;
+            
+        }
+    }
+
+    #contenedorServicios-Servicios{
+        background-image: url("/images/fondoPaginaServicios.png");
+        background-size: 1200px 1650px;
+        background-position: center center;
+        background-repeat: no-repeat;
+
+       
+    
+            display: flex;
+            flex-direction: column;
+            padding-top: 20px;
+            img{
+                width: 10vw;
+            }
+            .serviciosIndividual{
+                display: flex;
+                justify-content: center;
+                margin-right: 40px;
+                margin-left: 40px;
+                margin-bottom: 30px;
+                .contTexto-Servicios{
+                    width: 100%;
+                    padding-left: 50px;
+                    
+                    p{
+                        color: map-get($paleta-colores, "azulOscuro" );
+                        font-size: 20px;
+                        width: 75%;
+                        strong{
+                            font-size: 30px;
+                            display: block;
+                            
+                        }
+                    }
+                    
+                }
+                
+            }
+        
+    }
+
+
+    
+
+/***************************** PREGUNTAS FRECUENTES ****************************************/
+
+
+#contenedorBanner-PreguntasFrec{
+    display: flex;
+    position: relative;
+    overflow: hidden;
+    justify-content: center;
+    align-items: end;
+    background-image: url("/images/bannerPreguntasFrec.png");
+    background-position: center;
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 63vh;
+}
+
+#contenedorSecciones-PreguntasFrec{
+    
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    
+
+    
+    #contenedorVacunacion-PreguntasFrec{
+        
+        background-color: #0861AE;
+        background-image: url("/images/backVacunacion-PreguntasFrec.png");
+        background-position:10px 10rem  ;
+        background-repeat: no-repeat;
+        
+        
+    }
+
+    #contenedorDesparacitacion-PreguntasFrecuentes{
+        background-color: #F4F4F4;
+        background-image: url("/images/backLupa-PreguntasFrec.png");
+        background-position: 0px 40rem;
+        background-repeat: no-repeat;
+        
+
+       
+    }
+
+    #contenedorCastraciones-PreguntasFrec{
+        background-color: #0861AE;
+        background-image: url("/images/backEtetoscopio-PreguntasFrec.png");
+        background-position:0px 25rem ;
+        background-repeat: no-repeat;
+    }
+}
+
+    #contenedorSecciones-PreguntasFrec{
+        section{
+            .tituloContenedorBlanco-PreguntasFrec{
+                font-size: 30px;
+                margin: 2rem 20px;
+                
+                  color: #FFECE7;
+               
+            }
+            .tituloContenedorAzul-PreguntasFrec{
+                font-size: 30px;
+                margin: 2rem 20px;
+                color: #012559;
+            }
+            article{
+                width: 100%;
+                display: flex;
+                flex-direction: column;
+                justify-content: end;
+                align-items: end;
+                .contenedorPreguntas-Respuestas-Blanco{
+                    width: 60%;
+                    display: flex;
+                    flex-direction: column;
+                    align-items: star;
+                    margin-right: 60px;
+                    margin-bottom: 20px;
+                    
+                   
+                    .divPregunta-Blanco{
+                        color: #FFECE7;
+                        font-size: 30px;
+                        
+                            
+                        
+                    }
+                   
+                   p{
+                    font-size: 20px;
+                    color: #FFECE7;
+                    font-family: 'Inter', sans-serif;
+                    font-weight: 400;
+                   }
+                    
+                }
+                .contenedorPreguntas-Respuestas-Azul{
+                    width: 60%;
+                    display: flex;
+                    flex-direction: column;
+                    align-items: start;
+                    margin-right: 60px;
+                    margin-bottom: 20px;
+
+                    .divPregunta-Azul{
+                        color: #012559;
+                        font-size: 30px;
+                        
+                            
+                        
+                    }
+                    
+                   p{
+                    font-size: 20px;
+                    color: #012559;
+                    font-family: 'Inter', sans-serif;
+                    font-weight: 400;
+                   }
+                }
+            }
+        }
+       
+       
+       
+    }
+
+
+
+    //******************************************
+
+        //PAGINA NOSOTROS
+
+    //******************************************
+
+    #bannerNosotros{
+        position: relative;
+        overflow: hidden;
+        background-image: url("/images/bannerNosotros.png");
+        background-repeat: no-repeat;
+        background-position: center;
+        height: 49vh;
+        box-shadow: 0 9px 20px;
+        
+    }
+
+    
+    #contenedorBloqueQuienesSomos-Nosotros{
+        
+        width: 100%;
+        height: 40vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-top: 60px;
+        margin-bottom: 60px;
+    
+        #contenedorQuienesSomos-Nosotros{
+            padding-left: 50px;
+            width: 50%;
+
+            span{
+                font-size: 30px;
+            }
+            p{
+                width: 100%;
+                font-family: 'Inter', sans-serif;
+                font-weight: 400;
+                font-size: 25px;
+            }
+    
+        }
+
+        #contenedorImagenLogo-Nosotros{
+            width: 50%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            img{
+                width: 25vw;
+                height: 20vh;
             }
         }
         
@@ -287,7 +1035,7 @@
                         font-family: 'Inter', sans-serif;
                         font-weight: 400;
                         color: aqua;
-                        font-size: 23px;
+                        font-size: 25px;
                     }
                 }
             }
@@ -302,26 +1050,31 @@
     .testimonios{
         @include testimonios;
         background-position: center;
-        background-size: 98% 95%;
+        background-position: center center;
+        background-size: 70rem 70rem;
         background-repeat: no-repeat;
+    }
+
+
+    .contenedor-titulo-Comentarios{
+        width: 100%;
+       
+        margin-bottom: 40px;
+        
+        
+        display: flex;
+        justify-content: start;
+        span{
+            margin-left: 30px;
+            font-size: 40px;
+            color: #012559;
+        }
+        
     }
 
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-    
     //******************************************
 
         //PAGINA CONTACTO
@@ -329,122 +1082,848 @@
     //******************************************
 
 
-    #contenedorFiguraCaraGato{
-        
-        margin-top: 30px;
-        display: flex;
+    #banner-Contacto{
         width: 100%;
-      
-        height: 700px;
-        #imgIconoCaraGato{
-            width: 100%;
-          position: absolute;
-          z-index: -1;
-        }
-
-        #contenedorInfo-Contacto{
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            
-            .contenedorBloqueInfo1-Footer{
-                width: 50%;
-            }
-            .contenedorBloqueInfo2-Footer{
-                width: 50%;
-            }
-    
-            .bloqueDeInformacion-Contacto{
-                padding-bottom: 60px;
-                .iconoInfo-Footer{
-                    display: flex;
-                    img{
-                        width: 50px;
-                        height: 50px;
-                        display: flex;
-                        justify-content: center;
-                        align-items: center;
-                    }
-                    
-                }
-                .contTexto-Info{
-                    display: flex;
-                    align-items: center;
-                    margin-left: 10px;
-                    .pTexto-Info{
-                        font-size: 17px;
-                        margin: 0 0 0;
-                        color:aliceblue;
-                        strong{
-                            font-size: 20px;
-                            color:aliceblue;
-                        }
-                    }
-                    
-                }
-                .contTexto-Info2{
-                    width: 300px;
-                    height: 200px;
-                    margin-left: 10px;
-                    .pTexto-Info{
-                        
-                        font-size: 17px;
-                        margin: 0 0 0;
-                        color:aliceblue;
-                        strong{
-                            font-size: 20px;
-                            color:aliceblue;
-                            display: block;
-                        }
-                    }
-                }
-            }
-        }
-       
-       
+        position: relative;
+        overflow: hidden;
+        background-image: url("/images/banner-contacto.png");
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+        height: 35vh;
+        box-shadow: 0 9px 20px;
     }
 
-
-        
-    #contenedorFiguraCaraPerro{
-        margin-bottom: 30px;
-        width: 100%;
-        height: 550px;
-
-        #imgIconoCaraPerro{
-            width: 100%;
+        #contenedorInfo-Contacto{
+            padding-top: 3rem;
            
-            position: absolute;
-          z-index: -1;
-        }
-        #formularioContacto{
-            margin-top: 40px;
-            padding-top: 110px;
-            // padding-left: 10px;
-            padding-bottom: 20px;
+            background-color: #102770;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
             width: 100%;
+
+            .contenedorBloques-Info{
+                width: 100%;
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+                
+
+                .contenedorBloqueInfo1-Footer{
+
+                    width: 500px;
+                }
+                .contenedorBloqueInfo2-Footer{
+                    width: 500px;
+                }
+                
+                .bloqueDeInformacion-Contacto{
+                   margin-bottom: 2rem;
+                    .iconoInfo-Footer{
+                        display: flex;
+                       
+                        
+                        img{
+                            padding-left: .4rem;
+                            width: 50px;
+                            height: 50px;
+                            display: flex;
+                            justify-content: center;
+                            align-items: center;
+                        }
+                        
+                    }
+                    .contTexto-Info{
+                        display: flex;
+                        align-items: center;
+                        margin-left: 10px;
+                        
+                        .pTexto-Info{
+                            width: 100%;
+                            font-size: 17px;
+                            margin: 0 0 0;
+                            color:aliceblue;
+                            strong{
+                                font-size: 20px;
+                                color:aliceblue;
+                            }
+                        }
+                        
+                    }
+                    .contTexto-Info2{
+                       
+                        margin-left: 10px;
+                        .pTexto-Info{
+                            
+                            font-size: 17px;
+                            margin: 0 0 0;
+                            color:aliceblue;
+                            strong{
+                                font-size: 20px;
+                                color:aliceblue;
+                                display: block;
+                            }
+                        }
+                    }
+                }
+
+            
+            }
+            
+            
+        }
+ 
+ 
+         
+    #contenedorFiguraCaraPerro{
+        background-color: #FF7F00;
+        
+         
+        width: 100%;
+        height: 650px;
+ 
+        
+        #formularioContacto{
+             
+            padding-top: 10px;
+            padding-bottom: 20px;
+            height: 100%;
             display: flex;
             flex-direction: column;
             justify-content: center;
             align-items: center;
             span{
                 font-size: 30px;
-                margin-bottom: 10px;
+                margin-bottom: 30px;
                 color: map-get($paleta-colores, "azulOscuro" );
             }
             form{
                 display: flex;
                 flex-direction: column;
+                 
                 .formBasico{
-                    margin-bottom: 20px;
-                    border-radius: 10px;
-                    width: 300px;
+                    width: 350px;
                     height: 50px;
+                    padding: .8rem 1rem;
+                    margin-bottom: 2rem;
+                    border-radius: 10px;
+                     
+                     
                 }
                 .formTextBasico{
                     height: 80px;
                 }
+ 
+                 
             }
+        }
+    }
+ 
+ 
+    &::placeholder{
+        font-size: 20px;
+        color: #FF7F00;
+        font-family: 'Montserrat', sans-serif;
+        font-weight: 400;
+    }
+ 
+     
+}
+
+
+
+
+///////////////////////************************DESKTOP*******************************************/////////////////////////////
+
+
+@media only screen and (min-width:1200px){
+
+    #inicioFaro{
+        position: relative;
+        overflow: hidden;
+        display: flex;
+        justify-content: center;
+        align-items: end;
+        width: 100%;
+        height:100vh;
+        background-image: url("/images/fondoMobileInicio.png");
+        background-size: 100%;
+        background-repeat: no-repeat;
+        background-position: center;
+    
+        .tituloInicio{
+            
+            img{
+                display: none;
+            }
+        } 
+        
+    
+    }
+
+    .contenedor_contenedorIconosServicios-Inicio1{
+        width: 100%;
+        margin-top: 4rem;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        
+        
+        .contenedorIconosServicios-Inicio1{
+            width: 100%;
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            
+            .itemServicios-inicio{
+              
+                text-align: center;
+                height: 100%;
+                width: 7vw;
+                display: flex;
+                flex-direction: column;
+                img{
+                    height: 17vh;
+                }
+                .textoIcono{
+                   margin-top: 20px;
+                   font-size: 1.5rem;
+                }
+                
+            }
+        }
+    }
+    #contenedorServiciosInicio{
+        width: 100%;
+        height: 77vh;
+        background-image: url("/images/patitasSeccionServicio-Inicio.png");
+        background-size: 100vw;
+       background-position: center;
+        background-repeat: no-repeat;
+        
+
+        
+        #contenedorBtnMostrarMas{
+            margin-top: 7rem;
+            display: flex;
+            justify-content: center;
+
+        }
+        .tituloServicio-Inicio{
+            padding-top: 50px;
+            padding-left: 60px;
+            font-size: 40px;
+            color: map-get($paleta-colores, "azulOscuro" );
+        }
+    }
+
+
+
+    #contenedorNosotros-Inicio{
+        background-image:url("/images/bannerNosotros.png") ;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        width: 100%;
+        height:50vh ;
+    }
+    
+
+    
+
+    
+    #contenedorMarcas-Inicio{
+        
+       
+        background: url("/images/fondoMarcas.png");
+        background-size: 1200px 600px;
+        background-position: center -1rem;
+        background-repeat: no-repeat;
+        
+        
+        #contenedorMarcas{
+            
+            width: 100%;
+            height: 40vh;
+           
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            gap: 10rem;
+            align-items: center;
+            img{
+                width: 20vw;
+            }
+            #marca3{
+                margin-top: 55px;
+                margin-bottom: 55px;
+               
+            }
+        }
+        .tituloMarcas-Inicio{
+            padding-top: 50px;
+            padding-left: 20px;
+            width: 30%;
+            text-align: center;
+            font-size: 2.5rem;
+            color: map-get($paleta-colores, "azulOscuro" );
+        }
+    }
+
+    #contenedorMapa-Inicio{
+        width: 100%;
+        iframe{
+            width: 100%;
+        }
+    }
+
+
+    //******************************************
+        //PAGINA SERVICIOS 
+
+    //******************************************
+    #banner-Servicios{
+        width: 100%;
+        height: 79vh;
+        position:relative;
+        overflow: hidden; 
+        display: flex;
+        justify-content: center;
+        align-items: end;
+        background-image: url("/images/banner-Serv-Dktop.png");
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+        box-shadow: 0 10px 20px;
+        
+        #LetrasServiciosBanner{
+            display: none;
+            
+        }
+    }
+
+    
+
+
+    #contenedorServicios-Servicios{
+        background-image: url("/images/fondoPaginaServicios.png");
+        background-size: cover;
+        
+        background-position: center center;
+        background-repeat: no-repeat;
+        display: flex;
+        flex-direction: column;
+       
+        gap: 6rem;
+        padding-top: 20px;
+        img{
+            width: 7vw;
+        }
+        .serviciosIndividual{
+            display: flex;
+            justify-content: center;
+            margin-right: 40px;
+            margin-left: 40px;
+            margin-bottom: 30px;
+            .contTexto-Servicios{
+                width: 100%;
+                
+                padding-left: 50px;
+                
+                p{
+                    color: map-get($paleta-colores, "azulOscuro" );
+                    font-size: 25px;
+                    width: 75%;
+                    strong{
+                        font-size: 30px;
+                        display: block;
+                        
+                    }
+                }
+                
+            }
+            
+        }
+    }
+
+
+    //******************************************
+
+        //PAGINA PREGUNTAS FRECUENTES
+
+    //******************************************
+
+
+    #contenedorBanner-PreguntasFrec{
+        width: 100%;
+        height: 79vh;
+        display: flex;
+        position: relative;
+        overflow: hidden;
+        justify-content: center;
+        align-items: end;
+        background-image: url("/images/banner-PregFrec-Dktop.png");
+        background-size: 100%;
+        background-position: center center;
+        background-repeat: no-repeat;
+        box-shadow: 0 10px 20px;
+    }
+    
+    #contenedorSecciones-PreguntasFrec{
+        
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        
+    
+        
+        #contenedorVacunacion-PreguntasFrec{
+            padding-bottom: 4rem;
+            background-color: #0861AE;
+            background-image: url("/images/backVacunacion-PreguntasFrec.png");
+            background-size: 80rem 20rem;
+            background-position:0px 2rem  ;
+            background-repeat: no-repeat;
+            
+            
+            
+        }
+    
+        #contenedorDesparacitacion-PreguntasFrecuentes{
+            background-color: #F4F4F4;
+            background-image: url("/images/backLupa-PreguntasFrec.png");
+            background-position: 0px 5rem;
+            
+           
+            background-repeat: no-repeat;
+
+            
+            
+    
+           
+        }
+    
+        #contenedorCastraciones-PreguntasFrec{
+            background-color: #0861AE;
+            background-image: url("/images/backEtetoscopio-PreguntasFrec.png");
+            background-position:0px 50px ;
+            background-repeat: no-repeat;
+        }
+    }
+    #contenedorSecciones-PreguntasFrec{
+        section{
+            .tituloContenedorBlanco-PreguntasFrec{
+                font-size: 30px;
+                margin: 10px 20px;
+                
+                  color: #FFECE7;
+               
+            }
+            .tituloContenedorAzul-PreguntasFrec{
+                font-size: 30px;
+                margin: 10px 20px;
+                color: #012559;
+            }
+            article{
+                width: 100%;
+                display: flex;
+                flex-direction: column;
+                justify-content: end;
+                align-items: end;
+                .contenedorPreguntas-Respuestas-Blanco{
+                    width: 75%;
+                    display: flex;
+                    flex-direction: column;
+                    align-items: start;
+                    margin-right: 60px;
+                    margin-bottom: 20px;
+                    
+                   
+                    .divPregunta-Blanco{
+                        color: #FFECE7;
+                        font-size: 30px;
+                        
+                            
+                        
+                    }
+                   
+                   p{
+                    width: 100%;
+                    font-size: 20px;
+                    color: #FFECE7;
+                    font-family: 'Inter', sans-serif;
+                    font-weight: 400;
+                   }
+                    
+                }
+                .contenedorPreguntas-Respuestas-Azul{
+                    width: 75%;
+                    display: flex;
+                    flex-direction: column;
+                    align-items: start;
+                    margin-right: 60px;
+                    margin-bottom: 20px;
+
+                    .divPregunta-Azul{
+                        color: #012559;
+                        font-size: 30px;
+                        
+                            
+                        
+                    }
+                    
+                   p{
+                    font-size: 20px;
+                    width: 100%;
+                    color: #012559;
+                    font-family: 'Inter', sans-serif;
+                    font-weight: 400;
+                   }
+                }
+            }
+        }
+       
+        
+        
+    }
+
+    //******************************************
+
+        //PAGINA NOSOTROS
+
+    //******************************************
+
+    #bannerNosotros{
+        height: 79vh;
+        position: relative;
+        overflow: hidden;
+        background-image: url("/images/banner-Nosotros-Dktop.png");
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: center;
+        box-shadow: 0 9px 20px;
+        
+        
+    }
+
+    
+    #contenedorBloqueQuienesSomos-Nosotros{
+        
+        width: 100%;
+        height: 40vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-top: 60px;
+        margin-bottom: 60px;
+    
+        #contenedorQuienesSomos-Nosotros{
+            padding-left: 50px;
+            width: 50%;
+
+            span{
+                font-size: 3rem;
+            }
+            p{
+                width: 100%;
+                font-family: 'Inter', sans-serif;
+                font-weight: 400;
+                font-size: 2rem;
+            }
+    
+        }
+
+        #contenedorImagenLogo-Nosotros{
+            width: 50%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            img{
+                width: 25vw;
+                height: 30vh;
+            }
+        }
+        
+    }
+    
+
+    #contenedorBloqueFotoYDatosDoc{
+       
+        margin-top: 10rem;
+        
+        width: 100%;
+    
+        
+        .subcontenedorFotoYDatosDoc{
+            
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background-color: #102770;
+            
+            
+
+            #fondoColorFotoYDatosDoc{
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                
+
+                
+                #contenedorImagenDoc{
+                    margin-right: 8rem;
+                    width: 50%;
+                    display: flex;
+                    justify-content: center;
+                    img{
+                        width: 600px;
+                        height: 700px;
+                    }
+                }
+
+                #contenedorDatosDoc{
+                    width: 80%;
+                    
+                    display: flex;
+                    align-items: start;
+                    gap: 2rem;
+                    .itemDatos{
+                        display: flex;
+                        
+                        
+                        .contenedorParrafoItemDatos{
+                            p{
+                                font-family: 'Inter', sans-serif;
+                                font-weight: 400;
+                                color: aqua;
+                                font-size: 1.5rem;
+                            }
+                        }
+                    }
+                }
+                
+            
+            }
+    }    
+        
+
+
+       
+        
+
+        .imgCarrusel{
+            width: 100px;
+        }
+    }
+
+    .testimonios{
+        @include testimonios;
+        background-position: center;
+        background-position: center center;
+        background-size: 70rem 70rem;
+        background-repeat: no-repeat;
+    }
+
+
+    .contenedor-titulo-Comentarios{
+        width: 100%;
+       
+        margin-bottom: 40px;
+        
+        
+        display: flex;
+        justify-content: start;
+        span{
+            margin-left: 30px;
+            font-size: 40px;
+            color: #012559;
+        }
+        
+    }
+
+
+
+//******************************************
+
+        //PAGINA CONTACTO
+
+    //******************************************
+
+
+    #banner-Contacto{
+        width: 100%;
+        position: relative;
+        overflow: hidden;
+        background-image: url("/images/banner-contacto.png");
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+        height: 79vh;
+        box-shadow: 0 10px 20px;
+    }
+
+    
+    #contenedorEnvianosTuConsulta-Contacto{
+        
+        width: 100%;
+        height: 100vh;
+       
+        display: flex;
+        margin-top: 2srem;
+       
+        #contenedorFiguraCaraGato{
+           position: relative;
+            
+           
+            display: flex;
+            width: 50%;
+            max-width: 100%;
+            height: 100%;
+            padding-top: 5rem;
+            
+            background-color: #102770;
+            background-repeat: no-repeat;
+            background-position: center;
+            background-size:contain;
+             
+             
+            #contenedorInfo-Contacto{
+                
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                width: 100%;
+     
+                .contenedorBloques-Info{
+                    
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: center;
+                    
+                    align-items: center;
+     
+                    .contenedorBloqueInfo2-Footer{
+                        width: 100%;
+                    }
+                    
+                    
+             
+                    .bloqueDeInformacion-Contacto{
+                        width: 100%;
+                        padding-bottom: 40px;
+                        .iconoInfo-Footer{
+                            display: flex;
+                            
+                             
+                            img{
+                                padding-left: .4rem;
+                                width: 3vw;
+                                height: 5vh;
+                                display: flex;
+                                justify-content: center;
+                                align-items: center;
+                            }
+                             
+                        }
+                        .contTexto-Info{
+                            display: flex;
+                            align-items: center;
+                            margin-left: 10px;
+                             
+                            .pTexto-Info{
+                                font-size: 20px;
+                                margin: 0 0 0;
+                                color:aliceblue;
+                                strong{
+                                    font-size: 20px;
+                                    color:aliceblue;
+                                }
+                            }
+                             
+                        }
+                         .contTexto-Info2{
+                            
+                            margin-left: 10px;
+                            .pTexto-Info{
+                                 
+                                font-size: 17px;
+                                margin: 0 0 0;
+                                color:aliceblue;
+                                strong{
+                                    font-size: 20px;
+                                    color:aliceblue;
+                                    display: block;
+                                }
+                            }
+                        }
+                    }
+     
+                 
+                }
+                 
+                 
+            }
+            
+            
+        }
+
+        #contenedorFiguraCaraPerro{
+            width: 50%;
+            max-width: 100%;
+            background-image: url("/images/fondoIconoPerro.png");
+            background-repeat: no-repeat;
+            background-position: center;
+            background-size: contain;
+            
+             
+          
+            
+            #formularioContacto{
+                 
+                padding-top: 10px;
+                padding-bottom: 20px;
+                height: 100%;
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+                span{
+                    font-size: 30px;
+                    margin-bottom: 30px;
+                    color: map-get($paleta-colores, "azulOscuro" );
+                }
+                form{
+                    display: flex;
+                    flex-direction: column;
+                     
+                    .formBasico{
+                        width: 350px;
+                        height: 50px;
+                        padding: .8rem 1rem;
+                        margin-bottom: 2rem;
+                        border-radius: 10px;
+                         
+                         
+                    }
+                    .formTextBasico{
+                        height: 80px;
+                    }
+     
+                     
+                }
+            }
+        }
+     
+     
+        &::placeholder{
+            font-size: 20px;
+            color: #FF7F00;
+            font-family: 'Montserrat', sans-serif;
+            font-weight: 400;
         }
     }
 
@@ -452,33 +1931,3 @@
 
 
 }
-
-
-//TABLET
-@media only screen and (min-width:995px) and (max-width:1199px){
-//INDEX
-    #inicioFaro{
-        background-image: url("/images/fondoMobileInicio.png");
-        background-size: cover;
-        background-repeat: no-repeat;
-        background-position: center;
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        justify-content: space-between;
-        align-items: end;
-        width: 100%;
-        height:752.04px;
-        .contenedorBtnReservarTurno{
-           width: 100%; 
-           display: flex;
-           justify-content: center;
-        }
-    }
-
-
-
-
-}
-
-

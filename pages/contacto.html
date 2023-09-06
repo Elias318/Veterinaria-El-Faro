@@ -26,17 +26,17 @@
         <nav class="nav " id="nav">
             <button class="cerrar-menu" id="cerrar"><i class="bi bi-x"></i></button>
             <ul class="nav-list">
-                <li><a href="/index.html">Inicio</a></li>
-                <li><a href="/pages/servicios.html">Servicios</a></li>
-                <li><a href="/pages/preguntasFrecuentes.html">Preguntas Frecuentes</a></li>
-                <li><a href="/pages/nosotros.html">Nosotros</a></li>
-                <li><a href="/pages/contacto.html">Contacto</a></li>
+                <li><a class="aNav" href="/index.html">Inicio</a></li>
+                <li><a class="aNav" href="/pages/servicios.html">Servicios</a></li>
+                <li><a class="aNav" href="/pages/preguntasFrecuentes.html">Preguntas Frecuentes</a></li>
+                <li><a class="aNav" href="/pages/nosotros.html">Nosotros</a></li>
+                <li><a class="aNav active" href="/pages/contacto.html">Contacto</a></li>
             </ul>
 
             <div class="redes">
-              <div class="logoWhatsapp"><a href=""><img src="/images/whatsappp.png" alt="Whatsapp"></a></div>
-              <div class="logoFacebook"><a href=""><img src="/images/logoInsta.png" alt="Instagram"></a></div>
-              <div class="logoInsta"><a href=""><img src="/images/logoFace.png" alt="Facebook"></a></div>
+              <div class="efecto-1 logoWhatsapp"><a href=""><img src="/images/whatsappp.png" alt="Whatsapp"></a></div>
+              <div class="efecto-1 logoFacebook"><a href=""><img src="/images/logoInsta.png" alt="Instagram"></a></div>
+              <div class="efecto-1 logoInsta"><a href=""><img src="/images/logoFace.png" alt="Facebook"></a></div>
           </div>
         </nav>
       </div> 
@@ -45,11 +45,12 @@
     <section id="contenedorEnvianosTuConsulta-Contacto">
         
       <div id="contenedorFiguraCaraGato">
-          <img id="imgIconoCaraGato" src="/images/fondoIconoGato.png" alt="">
+        
             <div id="contenedorInfo-Contacto">
                 <!-- CONTIENE A LOS DOS SUBLOQUES DE INFO -->
-        
-                <!-- SUB-BLOQUE 1 -->
+              <div class="contenedorBloques-Info">
+
+                      <!-- SUB-BLOQUE 1 -->
         
                 <div class="contenedorBloqueInfo1-Footer">
                   <div class=" bloqueDeInformacion-Contacto">
@@ -139,12 +140,142 @@
                 </div>
                 
               </div>
+
+              </div>
+                
         </div>
 
         <div id="contenedorFiguraCaraPerro">
-          <img id="imgIconoCaraPerro" src="/images/fondoIconoPerro.png" alt="">
+      
 
           <div id="formularioContacto">
+            <span class="fontMontserrat">ENVIANOS TU CONSULTA</span>
+            <div id="contenedor-email">
+              <form action="">
+                <input class="formBasico" type="email" placeholder="Nombre y apellido" maxlength="20" >
+                <input class="formBasico" type="email" placeholder="Escribe tu mail">
+                <textarea class="formBasico formTextBasico" name="" id="" cols="30" rows="10" placeholder="Escribe tu consulta"></textarea>
+                <button class="fontMontserrat btnBlueSm">ENVIAR</button>
+              </form>
+            </div>
+          </div>
+        </div>
+
+        
+    </section>
+
+    
+
+
+      <section id="contenedorMapa-Inicio">
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3285.0792491746365!2d-58.536618423387125!3d-34.57686125608176!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bcb76a60a9c24d%3A0x7fe1ac3a6222fd7a!2sVETERINARIA%20EL%20FARO!5e0!3m2!1ses!2sar!4v1690991887264!5m2!1ses!2sar" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+      </section>
+   
+
+      <footer>
+        <div class="logo">
+          <img src="/images/Grupo 3393.png" alt="Logo">
+        </div>
+        <div class="contenedor_contenedorInfo-Footer_y_Formulario">
+          <div id="contenedorInfo-Footer">
+            <!-- CONTIENE A LOS DOS SUBLOQUES DE INFO -->
+    
+            <!-- SUB-BLOQUE 1 -->
+    
+            <div class="contenedorBloqueInfo1-Footer">
+              <div class="bloqueDeInformacion">
+    
+                <div class="iconoInfo-Footer">
+                  <img src="/images/iconoTelefonoFooter.png" alt="Icono Telefono Footer">
+                  <div class="contTexto-Info">
+                    <p class="pTexto-Info fontMontserrat400 "><strong class="fontMontserrat">Telefono:</strong> 475555</p>
+                  </div>
+    
+                </div>
+    
+              </div>
+    
+              <div class="bloqueDeInformacion">
+    
+                <div class="iconoInfo-Footer">
+                  <img src="/images/iconoWspFooter.png" alt="Icono Telefono Footer">
+                  <div class="contTexto-Info">
+                    <p class="pTexto-Info fontMontserrat400 "><strong class="fontMontserrat">WhatsApp:</strong> 1134051364</p>
+                  </div>
+    
+                </div>
+    
+              </div>
+              <div class="bloqueDeInformacion">
+    
+                <div class="iconoInfo-Footer">
+                  <img src="/images/iconoMailFooter.png" alt="Icono Telefono Footer">
+                  <div class="contTexto-Info">
+                    <p class="pTexto-Info fontMontserrat400 "><strong class="fontMontserrat">Mail:</strong> fondacaro.patricia@gmail.com</p>
+                  </div>
+    
+                </div>
+    
+              </div>
+            
+              <div class="bloqueDeInformacion">
+    
+                <div class="iconoInfo-Footer">
+                  <img src="/images/iconoHorarioFooter.png" alt="Icono Telefono Footer">
+                  <div class="contTexto-Info2">
+                    <p class="pTexto-Info fontMontserrat400 "><strong class="fontMontserrat">Horarios de atencion:</strong> Lunes a viernes de 9 a 13 hs y 16 a 20 hs Sabados de 9 a 13 hs</p>
+                  </div>
+    
+                </div>
+    
+              </div>
+            </div>
+    
+            <!-- SUB-BLOQUE 2  -->
+            <div class="contenedorBloqueInfo2-Footer">
+            
+              <div class="bloqueDeInformacion">
+    
+                <div class="iconoInfo-Footer">
+                  <img src="/images/IconoInstaFooter.png" alt="Icono Telefono Footer">
+                  <div class="contTexto-Info">
+                    <p class="pTexto-Info fontMontserrat400 "><strong class="fontMontserrat">Instagram:</strong> @veterinaria_el_faro</p>
+                  </div>
+    
+                </div>
+    
+              </div>
+              <div class="bloqueDeInformacion">
+    
+                <div class="iconoInfo-Footer">
+                  <img src="/images/iconoFaceFooter.png" alt="Icono Telefono Footer">
+                  <div class="contTexto-Info">
+                    <p class="pTexto-Info fontMontserrat400 "><strong class="fontMontserrat">Facebook:</strong> Veterinariaelfaro</p>
+                  </div>
+    
+                </div>
+    
+              </div>
+              <div class="bloqueDeInformacion">
+    
+                <div class="iconoInfo-Footer">
+                  <img src="/images/iconoUbicacionFooter.png" alt="Icono Telefono Footer">
+                  <div class="contTexto-Info2">
+                    <p class="pTexto-Info fontMontserrat400 "><strong class="fontMontserrat">Ubicacion:</strong> Yapeyu 1879,San Martin,Buenos Aires</p>
+                  </div>
+    
+                </div>
+    
+              </div>
+            </div>
+    
+    
+    
+            
+            
+          </div>
+    
+          <div id="formularioFooter">
             <span class="fontMontserrat">ENVIANOS TU CONSULTA</span>
             <div id="contenedor-email">
               <form action="">
@@ -155,126 +286,13 @@
               </form>
             </div>
           </div>
+  
+  
         </div>
-    </section>
-
-
-      <section id="contenedorMapa-Inicio">
-        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3285.0792491746365!2d-58.536618423387125!3d-34.57686125608176!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bcb76a60a9c24d%3A0x7fe1ac3a6222fd7a!2sVETERINARIA%20EL%20FARO!5e0!3m2!1ses!2sar!4v1690991887264!5m2!1ses!2sar" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-      </section>
-   
-
-    <footer>
-        <div class="logo">
-          <img src="/images/Grupo 3393.png" alt="Logo">
-        </div>
-  
-        <div id="contenedorInfo-Footer">
-          <!-- CONTIENE A LOS DOS SUBLOQUES DE INFO -->
-  
-          <!-- SUB-BLOQUE 1 -->
-  
-          <div class="contenedorBloqueInfo1-Footer">
-            <div class="bloqueDeInformacion">
-  
-              <div class="iconoInfo-Footer">
-                <img src="/images/iconoTelefonoFooter.png" alt="Icono Telefono Footer">
-                <div class="contTexto-Info">
-                  <p class="pTexto-Info fontMontserrat400 "><strong class="fontMontserrat">Telefono:</strong> 475555</p>
-                </div>
-  
-              </div>
-  
-            </div>
-  
-            <div class="bloqueDeInformacion">
-  
-              <div class="iconoInfo-Footer">
-                <img src="/images/iconoWspFooter.png" alt="Icono Telefono Footer">
-                <div class="contTexto-Info">
-                  <p class="pTexto-Info fontMontserrat400 "><strong class="fontMontserrat">WhatsApp:</strong> 1134051364</p>
-                </div>
-  
-              </div>
-  
-            </div>
-            <div class="bloqueDeInformacion">
-  
-              <div class="iconoInfo-Footer">
-                <img src="/images/iconoMailFooter.png" alt="Icono Telefono Footer">
-                <div class="contTexto-Info">
-                  <p class="pTexto-Info fontMontserrat400 "><strong class="fontMontserrat">Mail:</strong> fondacaro.patricia@gmail.com</p>
-                </div>
-  
-              </div>
-  
-            </div>
-          
-            <div class="bloqueDeInformacion">
-  
-              <div class="iconoInfo-Footer">
-                <img src="/images/iconoHorarioFooter.png" alt="Icono Telefono Footer">
-                <div class="contTexto-Info2">
-                  <p class="pTexto-Info fontMontserrat400 "><strong class="fontMontserrat">Horarios de atencion:</strong> Lunes a viernes de 9 a 13 hs y 16 a 20 hs Sabados de 9 a 13 hs</p>
-                </div>
-  
-              </div>
-  
-            </div>
-          </div>
-  
-          <!-- SUB-BLOQUE 2  -->
-          <div class="contenedorBloqueInfo2-Footer">
-          
-            <div class="bloqueDeInformacion">
-  
-              <div class="iconoInfo-Footer">
-                <img src="/images/IconoInstaFooter.png" alt="Icono Telefono Footer">
-                <div class="contTexto-Info">
-                  <p class="pTexto-Info fontMontserrat400 "><strong class="fontMontserrat">Instagram:</strong> @veterinaria_el_faro</p>
-                </div>
-  
-              </div>
-  
-            </div>
-            <div class="bloqueDeInformacion">
-  
-              <div class="iconoInfo-Footer">
-                <img src="/images/iconoFaceFooter.png" alt="Icono Telefono Footer">
-                <div class="contTexto-Info">
-                  <p class="pTexto-Info fontMontserrat400 "><strong class="fontMontserrat">Facebook:</strong> Veterinariaelfaro</p>
-                </div>
-  
-              </div>
-  
-            </div>
-            <div class="bloqueDeInformacion">
-  
-              <div class="iconoInfo-Footer">
-                <img src="/images/iconoUbicacionFooter.png" alt="Icono Telefono Footer">
-                <div class="contTexto-Info2">
-                  <p class="pTexto-Info fontMontserrat400 "><strong class="fontMontserrat">Ubicacion:</strong> Yapeyu 1879,San Martin,Buenos Aires</p>
-                </div>
-  
-              </div>
-  
-            </div>
-          </div>
-          
-        </div>
+        
   
   
-        <div id="formularioFooter">
-          <span class="fontMontserrat">ENVIANOS TU CONSULTA</span>
-          <div id="contenedor-email">
-            <form action="">
-              <input class="formBasico" type="email" placeholder="Nombre y apellido" maxlength="20" >
-              <input class="formBasico" type="email" placeholder="Escribe tu mail">
-              <textarea class="formBasico formTextBasico" name="" id="" cols="30" rows="10" placeholder="Escribe tu consulta"></textarea>
-              <button class="fontMontserrat btnOrangeSm">ENVIAR</button>
-            </form>
-          </div>
-        </div>
+        
   
         <div class="containerLineaBlanca">
           <hr>
