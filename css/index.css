@@ -40,10 +40,9 @@
         width: 20rem; }
   #contenedorServiciosInicio {
     background-image: url("/images/patitasSeccionServicio-Inicio.png");
-    background-color: cover;
     background-repeat: no-repeat;
     width: 100%;
-    height: 700px; }
+    height: 50rem; }
     #contenedorServiciosInicio .contenedorIconosServicios-Inicio1 {
       display: flex;
       justify-content: space-around;
@@ -55,7 +54,8 @@
         display: flex;
         flex-direction: column; }
         #contenedorServiciosInicio .contenedorIconosServicios-Inicio1 .itemServicios-inicio .textoIcono {
-          margin-top: 20px; }
+          margin-top: 20px;
+          color: #012559; }
     #contenedorServiciosInicio #contenedorBtnMostrarMas {
       margin-top: 70px;
       display: flex;
@@ -73,8 +73,8 @@
     width: 100%;
     height: 323.53px; }
   #contenedorMarcas-Inicio {
-    background: url("/images/fondoMarcas.png");
-    background-size: 180% 85%;
+    background: url("/images/fondo_marcas_mobiel.png");
+    background-size: 45rem;
     background-position: center bottom;
     background-repeat: no-repeat;
     height: 100%; }
@@ -92,10 +92,10 @@
         margin-bottom: 55px; }
     #contenedorMarcas-Inicio .tituloMarcas-Inicio {
       padding-top: 50px;
-      padding-left: 20px;
+      padding-left: 2rem;
       width: 50%;
-      text-align: center;
-      font-size: 30px;
+      text-align: left;
+      font-size: 25px;
       color: #012559; }
   #contenedorMapa-Inicio {
     width: 100%; }
@@ -109,36 +109,34 @@
     align-items: end;
     background-image: url("/images/bannerServicios.png");
     background-size: cover;
-    background-position: center;
+    background-position: right;
     background-repeat: no-repeat;
     width: 100%;
-    height: 52vh; }
+    height: 20rem; }
     #banner-Servicios #LetrasServiciosBanner {
-      width: 300px; }
-  #contenedorServicios-Servicios {
-    background-image: url("/images/fondoPaginaServicios.png");
-    background-size: 100% 100%;
-    background-position: center center;
-    background-repeat: no-repeat; }
-    #contenedorServicios-Servicios .serviciosIndividual {
-      margin-bottom: 4rem;
-      display: flex;
-      gap: 1rem;
-      width: 100%; }
-      #contenedorServicios-Servicios .serviciosIndividual img {
-        height: 10vh;
-        margin-left: 4px; }
+      width: 15rem; }
+  #contenedorServicios-Servicios .serviciosIndividual {
+    padding: 1rem 0;
+    display: flex;
+    gap: 1rem;
+    width: 100%; }
+    #contenedorServicios-Servicios .serviciosIndividual .contTexto-Servicios strong {
+      color: #012559; }
+    #contenedorServicios-Servicios .serviciosIndividual img {
+      height: 4.5rem;
+      margin-left: 4px; }
   #contenedorBanner-PreguntasFrec {
     display: flex;
     position: relative;
     overflow: hidden;
     justify-content: center;
     align-items: end;
-    background-image: url("/images/bannerPreguntasFrec.png");
+    background-image: url("/images/banner_pregFrec_mobile.png");
     background-position: center;
+    background-size: 100% 120%;
     background-repeat: no-repeat;
     width: 100%;
-    height: 63vh;
+    height: 20rem;
     box-shadow: 0 9px 20px; }
   #contenedorSecciones-PreguntasFrec {
     display: flex;
@@ -175,7 +173,7 @@
       width: 60%;
       display: flex;
       flex-direction: column;
-      align-items: star;
+      align-items: flex-start;
       margin-right: 60px;
       margin-bottom: 20px; }
       #contenedorSecciones-PreguntasFrec section article .contenedorPreguntas-Respuestas-Blanco .divPregunta-Blanco {
@@ -189,7 +187,7 @@
       width: 60%;
       display: flex;
       flex-direction: column;
-      align-items: start;
+      align-items: flex-start;
       margin-right: 60px;
       margin-bottom: 20px; }
       #contenedorSecciones-PreguntasFrec section article .contenedorPreguntas-Respuestas-Azul .divPregunta-Azul {
@@ -206,10 +204,11 @@
   #contenedorSecciones-PreguntasFrec #contenedorCastraciones-PreguntasFrec {
     background-position: 0px 300px; }
   #bannerNosotros {
-    background-image: url("/images/bannerNosotros.png");
-    height: 340px;
+    background-image: url("/images/banner_nosotros-mobile.png");
+    height: 20rem;
     background-repeat: no-repeat;
     background-position: center;
+    background-size: 100% 120%;
     box-shadow: 0 9px 20px; }
   #contenedorBloqueQuienesSomos-Nosotros {
     width: 100%;
@@ -221,12 +220,14 @@
     margin-bottom: 60px; }
     #contenedorBloqueQuienesSomos-Nosotros #contenedorQuienesSomos-Nosotros span {
       padding: 2rem;
-      font-size: 26px; }
+      font-size: 26px;
+      color: #102770; }
     #contenedorBloqueQuienesSomos-Nosotros #contenedorQuienesSomos-Nosotros p {
       padding: 2rem;
       font-family: 'Inter', sans-serif;
       font-weight: 400;
-      font-size: 22px; }
+      font-size: 22px;
+      color: #012559; }
     #contenedorBloqueQuienesSomos-Nosotros #contenedorImagenLogo-Nosotros {
       width: 50%;
       display: flex;
@@ -252,10 +253,14 @@
       #contenedorBloqueFotoYDatosDoc #contenedorDatosDoc .itemDatos .contenedorParrafoItemDatos p {
         font-family: 'Inter', sans-serif;
         font-weight: 400;
-        color: aqua;
+        color: white;
         font-size: 23px; }
-  #contenedorBloqueFotoYDatosDoc .imgCarrusel {
-    width: 100px; }
+  #contenedorBloqueFotoYDatosDoc .tituloCarrousel h1 {
+    text-align: center; }
+  #contenedorBloqueFotoYDatosDoc .carrousel {
+    display: block; }
+    #contenedorBloqueFotoYDatosDoc .carrousel .imgCarrusel {
+      width: 100px; }
   .testimonios {
     padding-top: 5rem;
     padding-bottom: 11rem;
@@ -269,7 +274,7 @@
     width: 100%;
     height: 100%;
     background-position: center;
-    background-size: 98% 95%;
+    background-size: 100% 70%;
     background-repeat: no-repeat; }
   .contenedor-titulo-Comentarios {
     width: 100%;
@@ -285,12 +290,20 @@
     width: 100%;
     position: relative;
     overflow: hidden;
-    background-image: url("/images/banner-contacto.png");
+    background-image: url("/images/banner_contacto_Sin_letras.png");
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
-    height: 30vh;
+    height: 20rem;
     box-shadow: 0 9px 20px; }
+    #banner-Contacto .contenedor_Letras_Contacto {
+      height: 100%;
+      width: 100%;
+      display: flex;
+      justify-content: center;
+      align-items: end; }
+      #banner-Contacto .contenedor_Letras_Contacto img {
+        width: 15rem; }
   #contenedorInfo-Contacto {
     padding-top: 3rem;
     padding-left: 2rem;
@@ -307,17 +320,18 @@
       justify-content: center;
       align-items: center; }
       #contenedorInfo-Contacto .contenedorBloques-Info .contenedorBloqueInfo1-Footer {
-        width: 500px; }
+        width: 100%; }
       #contenedorInfo-Contacto .contenedorBloques-Info .contenedorBloqueInfo2-Footer {
-        width: 500px; }
+        width: 100%;
+        justify-content: start; }
       #contenedorInfo-Contacto .contenedorBloques-Info .bloqueDeInformacion-Contacto {
-        margin-bottom: 3rem; }
+        margin-bottom: 1rem; }
         #contenedorInfo-Contacto .contenedorBloques-Info .bloqueDeInformacion-Contacto .iconoInfo-Footer {
-          display: flex; }
+          display: flex;
+          width: 100%; }
           #contenedorInfo-Contacto .contenedorBloques-Info .bloqueDeInformacion-Contacto .iconoInfo-Footer img {
             padding-left: .4rem;
-            width: 50px;
-            height: 50px;
+            height: 6vh;
             display: flex;
             justify-content: center;
             align-items: center; }
@@ -327,20 +341,20 @@
           margin-left: 10px; }
           #contenedorInfo-Contacto .contenedorBloques-Info .bloqueDeInformacion-Contacto .contTexto-Info .pTexto-Info {
             width: 100%;
-            font-size: 17px;
-            margin: 0 0 0;
+            font-size: 15px;
             color: aliceblue; }
             #contenedorInfo-Contacto .contenedorBloques-Info .bloqueDeInformacion-Contacto .contTexto-Info .pTexto-Info strong {
-              font-size: 20px;
+              font-size: 17px;
               color: aliceblue; }
         #contenedorInfo-Contacto .contenedorBloques-Info .bloqueDeInformacion-Contacto .contTexto-Info2 {
           margin-left: 10px; }
           #contenedorInfo-Contacto .contenedorBloques-Info .bloqueDeInformacion-Contacto .contTexto-Info2 .pTexto-Info {
-            font-size: 17px;
-            margin: 0 0 0;
+            width: 100%;
+            font-size: 15px;
+            padding-right: 2rem;
             color: aliceblue; }
             #contenedorInfo-Contacto .contenedorBloques-Info .bloqueDeInformacion-Contacto .contTexto-Info2 .pTexto-Info strong {
-              font-size: 20px;
+              font-size: 17px;
               color: aliceblue;
               display: block; }
   #contenedorFiguraCaraPerro {
@@ -356,7 +370,8 @@
       justify-content: center;
       align-items: center; }
       #contenedorFiguraCaraPerro #formularioContacto span {
-        font-size: 30px;
+        text-align: center;
+        font-size: 28px;
         margin-bottom: 30px;
         color: #012559; }
       #contenedorFiguraCaraPerro #formularioContacto form {
@@ -413,16 +428,18 @@
         display: flex;
         flex-direction: column; }
         .contenedor_contenedorIconosServicios-Inicio1 .contenedorIconosServicios-Inicio1 .itemServicios-inicio img {
-          height: 14vh; }
+          height: 20vh; }
         .contenedor_contenedorIconosServicios-Inicio1 .contenedorIconosServicios-Inicio1 .itemServicios-inicio .textoIcono {
           margin-top: 20px; }
+          .contenedor_contenedorIconosServicios-Inicio1 .contenedorIconosServicios-Inicio1 .itemServicios-inicio .textoIcono span {
+            color: #012559; }
   #contenedorServiciosInicio {
     background-image: url("/images/patitasSeccionServicio-Inicio.png");
     background-size: 100vw;
     background-position: center;
     background-repeat: no-repeat;
     width: 100%;
-    height: 60vh; }
+    height: 30rem; }
     #contenedorServiciosInicio #contenedorBtnMostrarMas {
       margin-top: 50px;
       display: flex;
@@ -438,10 +455,10 @@
     background-repeat: no-repeat;
     background-size: cover;
     width: 100%;
-    height: 50vh; }
+    height: 25rem; }
   #contenedorMarcas-Inicio {
-    background: url("/images/fondoMarcas.png");
-    background-size: 1200px 750px;
+    background: url("/images/fondo_marcas_mobiel.png");
+    background-size: 50rem;
     background-position: center center;
     background-repeat: no-repeat;
     height: 100%; }
@@ -457,35 +474,11 @@
     #contenedorMarcas-Inicio .tituloMarcas-Inicio {
       padding-top: 50px;
       padding-left: 20px;
-      width: 45%;
-      text-align: center;
-      font-size: 30px;
-      color: #012559; }
-  #contenedorMarcas-Inicio {
-    background: url("/images/fondoMarcas.png");
-    background-size: 1200px 750px;
-    background-position: center center;
-    background-repeat: no-repeat;
-    height: 70vh; }
-    #contenedorMarcas-Inicio #contenedorMarcas {
-      margin-top: 5rem;
-      width: 100%;
-      display: flex;
-      flex-direction: row;
-      justify-content: space-around;
-      align-items: center; }
-      #contenedorMarcas-Inicio #contenedorMarcas img {
-        width: 30vw; }
-      #contenedorMarcas-Inicio #contenedorMarcas #marca3 {
-        margin-top: 55px;
-        margin-bottom: 55px; }
-    #contenedorMarcas-Inicio .tituloMarcas-Inicio {
-      padding-top: 50px;
-      padding-left: 20px;
-      width: 45%;
-      text-align: center;
-      font-size: 35px;
-      color: #012559; }
+      width: 45%; }
+      #contenedorMarcas-Inicio .tituloMarcas-Inicio span {
+        text-align: start;
+        font-size: 30px;
+        color: #012559; }
   #contenedorMapa-Inicio {
     width: 100%; }
     #contenedorMapa-Inicio iframe {
@@ -498,23 +491,25 @@
     justify-content: center;
     align-items: end;
     background-image: url("/images/bannerServicios.png");
-    background-size: cover;
+    background-size: 100% 110%;
     background-position: center;
     background-repeat: no-repeat;
+    box-shadow: 0 10px 20px;
+    margin-bottom: 3rem;
     width: 100%;
-    height: 52vh; }
+    height: 25rem; }
     #banner-Servicios #LetrasServiciosBanner {
-      width: 300px; }
+      width: 30vw; }
   #contenedorServicios-Servicios {
     background-image: url("/images/fondoPaginaServicios.png");
-    background-size: 1200px 1650px;
+    background-size: 100% 95%;
     background-position: center center;
     background-repeat: no-repeat;
     display: flex;
     flex-direction: column;
     padding-top: 20px; }
     #contenedorServicios-Servicios img {
-      width: 10vw; }
+      height: 15vh; }
     #contenedorServicios-Servicios .serviciosIndividual {
       display: flex;
       justify-content: center;
@@ -529,6 +524,7 @@
           font-size: 20px;
           width: 75%; }
           #contenedorServicios-Servicios .serviciosIndividual .contTexto-Servicios p strong {
+            color: #012559;
             font-size: 30px;
             display: block; }
   /***************************** PREGUNTAS FRECUENTES ****************************************/
@@ -541,8 +537,10 @@
     background-image: url("/images/bannerPreguntasFrec.png");
     background-position: center;
     background-repeat: no-repeat;
+    background-size: cover;
+    box-shadow: 0 10px 20px;
     width: 100%;
-    height: 63vh; }
+    height: 25rem; }
   #contenedorSecciones-PreguntasFrec {
     display: flex;
     flex-direction: column;
@@ -613,11 +611,11 @@
     background-image: url("/images/bannerNosotros.png");
     background-repeat: no-repeat;
     background-position: center;
-    height: 49vh;
+    height: 25rem;
     box-shadow: 0 9px 20px; }
   #contenedorBloqueQuienesSomos-Nosotros {
     width: 100%;
-    height: 40vh;
+    height: 20rem;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -627,7 +625,8 @@
       padding-left: 50px;
       width: 50%; }
       #contenedorBloqueQuienesSomos-Nosotros #contenedorQuienesSomos-Nosotros span {
-        font-size: 30px; }
+        font-size: 30px;
+        color: #102770; }
       #contenedorBloqueQuienesSomos-Nosotros #contenedorQuienesSomos-Nosotros p {
         width: 100%;
         font-family: 'Inter', sans-serif;
@@ -639,8 +638,7 @@
       justify-content: center;
       align-items: center; }
       #contenedorBloqueQuienesSomos-Nosotros #contenedorImagenLogo-Nosotros img {
-        width: 25vw;
-        height: 20vh; }
+        height: 30vh; }
   #contenedorBloqueFotoYDatosDoc #fondoColorFotoYDatosDoc {
     background-color: #102770;
     height: 100%; }
@@ -659,7 +657,7 @@
       #contenedorBloqueFotoYDatosDoc #contenedorDatosDoc .itemDatos .contenedorParrafoItemDatos p {
         font-family: 'Inter', sans-serif;
         font-weight: 400;
-        color: aqua;
+        color: #fff;
         font-size: 25px; }
   #contenedorBloqueFotoYDatosDoc .imgCarrusel {
     width: 100px; }
@@ -693,11 +691,13 @@
     position: relative;
     overflow: hidden;
     background-image: url("/images/banner-contacto.png");
-    background-size: cover;
+    background-size: 100% 120%;
     background-position: center;
     background-repeat: no-repeat;
-    height: 35vh;
+    height: 25rem;
     box-shadow: 0 9px 20px; }
+    #banner-Contacto .contenedor_Letras_Contacto {
+      display: none; }
   #contenedorInfo-Contacto {
     padding-top: 3rem;
     background-color: #102770;
@@ -713,6 +713,10 @@
       justify-content: center;
       align-items: center; }
       #contenedorInfo-Contacto .contenedorBloques-Info .contenedorBloqueInfo1-Footer {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: start;
         width: 500px; }
       #contenedorInfo-Contacto .contenedorBloques-Info .contenedorBloqueInfo2-Footer {
         width: 500px; }
@@ -722,8 +726,7 @@
           display: flex; }
           #contenedorInfo-Contacto .contenedorBloques-Info .bloqueDeInformacion-Contacto .iconoInfo-Footer img {
             padding-left: .4rem;
-            width: 50px;
-            height: 50px;
+            height: 3rem;
             display: flex;
             justify-content: center;
             align-items: center; }
@@ -790,9 +793,9 @@
     justify-content: center;
     align-items: end;
     width: 100%;
-    height: 100vh;
-    background-image: url("/images/fondoMobileInicio.png");
-    background-size: 100%;
+    height: 90vh;
+    background-image: url("/images/fondo_Inicio_Desktop.png");
+    background-size: 100% 100%;
     background-repeat: no-repeat;
     background-position: center; }
     #inicioFaro .tituloInicio img {
@@ -815,19 +818,21 @@
         display: flex;
         flex-direction: column; }
         .contenedor_contenedorIconosServicios-Inicio1 .contenedorIconosServicios-Inicio1 .itemServicios-inicio img {
-          height: 17vh; }
+          height: 9rem; }
         .contenedor_contenedorIconosServicios-Inicio1 .contenedorIconosServicios-Inicio1 .itemServicios-inicio .textoIcono {
           margin-top: 20px;
-          font-size: 1.5rem; }
+          font-size: 1.3rem;
+          text-align: center;
+          color: #012559; }
   #contenedorServiciosInicio {
     width: 100%;
-    height: 77vh;
+    height: 35rem;
     background-image: url("/images/patitasSeccionServicio-Inicio.png");
     background-size: 100vw;
     background-position: center;
     background-repeat: no-repeat; }
     #contenedorServiciosInicio #contenedorBtnMostrarMas {
-      margin-top: 7rem;
+      margin-top: 5rem;
       display: flex;
       justify-content: center; }
     #contenedorServiciosInicio .tituloServicio-Inicio {
@@ -841,17 +846,16 @@
     background-repeat: no-repeat;
     background-size: cover;
     width: 100%;
-    height: 50vh; }
+    height: 30rem; }
   #contenedorMarcas-Inicio {
-    background: url("/images/fondoMarcas.png");
-    background-size: 1200px 600px;
-    background-position: center -1rem;
+    height: 40rem;
+    background: url("/images/fondo_marcas_mobiel.png");
+    background-position: center center;
     background-repeat: no-repeat; }
     #contenedorMarcas-Inicio #contenedorMarcas {
       width: 100%;
-      height: 40vh;
+      height: 30rem;
       display: flex;
-      flex-direction: row;
       justify-content: center;
       gap: 10rem;
       align-items: center; }
@@ -862,10 +866,10 @@
         margin-bottom: 55px; }
     #contenedorMarcas-Inicio .tituloMarcas-Inicio {
       padding-top: 50px;
-      padding-left: 20px;
-      width: 30%;
-      text-align: center;
-      font-size: 2.5rem;
+      padding-left: 3rem;
+      width: 30vw;
+      text-align: start;
+      font-size: 2rem;
       color: #012559; }
   #contenedorMapa-Inicio {
     width: 100%; }
@@ -883,20 +887,21 @@
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
-    box-shadow: 0 10px 20px; }
+    box-shadow: 0 10px 20px;
+    margin-bottom: 3rem; }
     #banner-Servicios #LetrasServiciosBanner {
       display: none; }
   #contenedorServicios-Servicios {
     background-image: url("/images/fondoPaginaServicios.png");
-    background-size: cover;
+    background-size: 100% 100%;
     background-position: center center;
     background-repeat: no-repeat;
     display: flex;
     flex-direction: column;
-    gap: 6rem;
+    gap: 5rem;
     padding-top: 20px; }
     #contenedorServicios-Servicios img {
-      width: 7vw; }
+      height: 7rem; }
     #contenedorServicios-Servicios .serviciosIndividual {
       display: flex;
       justify-content: center;
@@ -1005,7 +1010,6 @@
     box-shadow: 0 9px 20px; }
   #contenedorBloqueQuienesSomos-Nosotros {
     width: 100%;
-    height: 40vh;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -1015,7 +1019,8 @@
       padding-left: 50px;
       width: 50%; }
       #contenedorBloqueQuienesSomos-Nosotros #contenedorQuienesSomos-Nosotros span {
-        font-size: 3rem; }
+        font-size: 3rem;
+        color: #102770; }
       #contenedorBloqueQuienesSomos-Nosotros #contenedorQuienesSomos-Nosotros p {
         width: 100%;
         font-family: 'Inter', sans-serif;
@@ -1059,7 +1064,7 @@
             #contenedorBloqueFotoYDatosDoc .subcontenedorFotoYDatosDoc #fondoColorFotoYDatosDoc #contenedorDatosDoc .itemDatos .contenedorParrafoItemDatos p {
               font-family: 'Inter', sans-serif;
               font-weight: 400;
-              color: aqua;
+              color: white;
               font-size: 1.5rem; }
     #contenedorBloqueFotoYDatosDoc .imgCarrusel {
       width: 100px; }
@@ -1075,9 +1080,8 @@
     align-items: center;
     width: 100%;
     height: 100%;
-    background-position: center;
     background-position: center center;
-    background-size: 70rem 70rem;
+    background-size: 80% 115%;
     background-repeat: no-repeat; }
   .contenedor-titulo-Comentarios {
     width: 100%;
@@ -1098,9 +1102,10 @@
     background-repeat: no-repeat;
     height: 79vh;
     box-shadow: 0 10px 20px; }
+    #banner-Contacto .contenedor_Letras_Contacto {
+      display: none; }
   #contenedorEnvianosTuConsulta-Contacto {
     width: 100%;
-    height: 100vh;
     display: flex;
     margin-top: 2srem; }
     #contenedorEnvianosTuConsulta-Contacto #contenedorFiguraCaraGato {
@@ -1110,10 +1115,7 @@
       max-width: 100%;
       height: 100%;
       padding-top: 5rem;
-      background-color: #102770;
-      background-repeat: no-repeat;
-      background-position: center;
-      background-size: contain; }
+      background-color: #102770; }
       #contenedorEnvianosTuConsulta-Contacto #contenedorFiguraCaraGato #contenedorInfo-Contacto {
         display: flex;
         justify-content: center;
@@ -1128,7 +1130,7 @@
             width: 100%; }
           #contenedorEnvianosTuConsulta-Contacto #contenedorFiguraCaraGato #contenedorInfo-Contacto .contenedorBloques-Info .bloqueDeInformacion-Contacto {
             width: 100%;
-            padding-bottom: 40px; }
+            padding-bottom: 70px; }
             #contenedorEnvianosTuConsulta-Contacto #contenedorFiguraCaraGato #contenedorInfo-Contacto .contenedorBloques-Info .bloqueDeInformacion-Contacto .iconoInfo-Footer {
               display: flex; }
               #contenedorEnvianosTuConsulta-Contacto #contenedorFiguraCaraGato #contenedorInfo-Contacto .contenedorBloques-Info .bloqueDeInformacion-Contacto .iconoInfo-Footer img {
@@ -1399,6 +1401,7 @@
 .contenedorNav {
   background: transparent;
   position: absolute;
+  z-index: 1;
   width: 100%;
   top: 0;
   left: 0;
@@ -1431,7 +1434,7 @@
     align-items: center;
     gap: 1rem; }
     .contenedorNav .redes div {
-      box-shadow: 6px 6px 10px;
+      box-shadow: 4px 3px 10px;
       border-radius: 50%; }
 
 .efecto-1 {
@@ -1443,7 +1446,7 @@
 .active {
   color: orange !important; }
 
-@media only screen and (max-width: 921px) {
+@media only screen and (max-width: 1036px) {
   /*NAV HECHA A MANO */
   .contenedorNav {
     background-color: transparent; }
@@ -1482,20 +1485,26 @@
       bottom: 0;
       flex-direction: column;
       background-color: #012559;
-      padding: 2rem; }
+      padding: 2rem;
+      overflow: hidden; }
       .contenedorNav .nav .nav-list {
         flex-direction: column;
         align-items: end; }
+        .contenedorNav .nav .nav-list li {
+          width: 100%;
+          border-bottom: 1px solid #FFFFFF; }
       .contenedorNav .nav .redes {
         align-items: center;
-        justify-content: center; }
+        justify-content: center;
+        overflow: hidden; }
     .contenedorNav .visible {
       position: fixed;
       opacity: 1;
       visibility: visible;
-      z-index: 1; } }
+      z-index: 1;
+      overflow: hidden; } }
 
-@media only screen and (min-width: 922px) and (max-width: 1199px) {
+@media only screen and (min-width: 1037px) and (max-width: 1199px) {
   .contenedorNav {
     background: transparent;
     position: absolute;
@@ -1525,6 +1534,7 @@
       margin-right: 2rem; }
       .contenedorNav .nav-list .aNav {
         position: relative;
+        font-size: 22px;
         font-family: 'Inter', sans-serif;
         font-weight: 400;
         text-decoration: none;
@@ -1543,8 +1553,9 @@
     .contenedorNav .redes {
       display: flex;
       align-items: center;
-      gap: 1rem;
-      margin-left: 2rem; } }
+      gap: 1rem; }
+      .contenedorNav .redes img {
+        height: 2rem; } }
 
 @media only screen and (min-width: 1200px) {
   .abrir-menu {
@@ -1868,7 +1879,8 @@ footer {
     font-weight: 400; } }
 
 .btnReservarTurno {
-  margin-bottom: 70px;
+  position: relative;
+  margin-bottom: 100px;
   color: #ffffff;
   background-color: #FF7F00;
   font-size: 20px;

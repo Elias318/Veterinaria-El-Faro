@@ -37,9 +37,9 @@
               </ul>
   
               <div class="redes">
-                <div class="efecto-1 logoWhatsapp"><a href=""><img src="./images/whatsappp.png" alt="Whatsapp"></a></div>
-                <div class="efecto-1 logoFacebook"><a href=""><img src="./images/logoInsta.png" alt="Instagram"></a></div>
-                <div class="efecto-1 logoInsta"><a href=""><img src="./images/logoFace.png" alt="Facebook"></a></div>
+                <div class="efecto-1 logoWhatsapp"><a href="https://wa.me/+5491134051364"><img src="./images/whatsappp.png" alt="Whatsapp"></a></div>
+                <div class="efecto-1 logoFacebook"><a href="https://www.instagram.com/veterinariaelfaro/"><img src="./images/logoInsta.png" alt="Instagram"></a></div>
+                <div class="efecto-1 logoInsta"><a href="https://www.facebook.com/farovet?locale=es_LA"><img src="./images/logoFace.png" alt="Facebook"></a></div>
             </div>
           </nav>
         </div> 
@@ -47,8 +47,10 @@
         <div class="tituloInicio">
           <img src="./images/Grupo 3396.png" alt="">
         </div>
+        <a href="https://wa.me/+5491134051364" >
+          <button type="button"  class="fontMontserrat btnReservarTurno"><strong>RESERVA TU TURNO</strong></button>
+        </a>
         
-        <button type="button" class="fontMontserrat btnReservarTurno"><strong>RESERVA TU TURNO</strong></button>
         
       </div>
 
@@ -61,25 +63,25 @@
         <div class="contenedor_contenedorIconosServicios-Inicio1">
           <div class="contenedorIconosServicios-Inicio1">
             <div class="fontMontserrat itemServicios-inicio">
-              <img src="/images/Medical report.png" alt="">
+              <img src="/images/Medical report.png" alt="Icono servicio">
               <div class="textoIcono">
-                <span>Holaquetal</span>
+                <span>ECOGRAFIAS</span>
               </div>
             </div>
   
             <div class="fontMontserrat itemServicios-inicio">
-              <img src="/images/IconoFarmacia-Servicios.png" alt="">
+              <img src="/images/IconoFarmacia-Servicios.png" alt="Icono servicio">
              <div class="textoIcono">
-              <span>Holaquetal</span>
+              <span>FARMACIA</span>
              </div>
             </div>
           </div>
   
           <div class="contenedorIconosServicios-Inicio1">
             <div class="fontMontserrat itemServicios-inicio">
-              <img src="/images/iconoPlanVacunacion-Inicio.png" alt="">
+              <img src="/images/iconoPlanVacunacion-Inicio.png" alt="Icono servicio">
               <div class="textoIcono">
-                <span>Holaquetal</span>
+                <span>PLAN DE VACUNACION</span>
               </div>
               
             </div>
@@ -87,7 +89,7 @@
             <div class="fontMontserrat itemServicios-inicio">
               <img src="/images/iconoVet-Inicio.png" alt="">
               <div class="textoIcono">
-                <span>Holaquetal</span>
+                <span>PET-SHOP</span>
               </div>
               
             </div>
@@ -96,13 +98,19 @@
         </div>
         
         <div id="contenedorBtnMostrarMas" >
-          <button type="button" class="fontMontserrat btnOrangeMd"><strong>MOSTRAR MAS</strong></button>
+          <a href="/pages/servicios.html">
+            <button type="button" class="fontMontserrat btnOrangeMd" ><strong>MOSTRAR MAS</strong></button>
+          </a>
+          
         </div>
       </section>
 
       <section id="contenedorNosotros-Inicio">
         <div id="contenedorBtnConocenos">
-          <button type="button" class="fontMontserrat btnOrangeMd"><strong>CONOCENOS</strong></button>
+          <a href="/pages/nosotros.html">
+            <button type="button" class="fontMontserrat btnOrangeMd"><strong>CONOCENOS</strong></button>
+          </a>
+         
         </div>
         
       </section>
@@ -245,11 +253,12 @@
         <div id="formularioFooter">
           <span class="fontMontserrat">ENVIANOS TU CONSULTA</span>
           <div id="contenedor-email">
-            <form action="">
-              <input class="formBasico" type="email" placeholder="Nombre y apellido" maxlength="20" >
-              <input class="formBasico" type="email" placeholder="Escribe tu mail">
-              <textarea class="formBasico formTextBasico" name="" id="" cols="30" rows="10" placeholder="Escribe tu consulta"></textarea>
-              <button class="fontMontserrat btnOrangeSm">ENVIAR</button>
+            <form action="https://formsubmit.co/elias.olivencia@gmail.com" method="POST">
+              <input class="formBasico" name="name" id="name" type="text" placeholder="Nombre y apellido" required maxlength="30" >
+              <input class="formBasico" name="email" id="email"  type="email" placeholder="Escribe tu mail" required>
+              <textarea class="formBasico formTextBasico" name="text" id="text" cols="30" rows="10" placeholder="Escribe tu consulta" required></textarea>
+              <button type="submit" class="fontMontserrat btnOrangeSm">ENVIAR</button>
+              <input type="hidden" name="_next" value="http://127.0.0.1:5500/">
             </form>
           </div>
         </div>
@@ -266,11 +275,11 @@
       </div>
 
       <div id="containerNav-Footer">
-        <a href="" class="fontMontserrat400 navbar-Footer">Inicio</a>
-        <a href="" class="fontMontserrat400 navbar-Footer">Servicios</a>
-        <a href="" class="fontMontserrat400 navbar-Footer">Preguntas Frecuentes</a>
-        <a href="" class=" fontMontserrat400 navbar-Footer">Nosotros</a>
-        <a href="" class="fontMontserrat400 navbar-Footer">Contacto</a>
+        <a href="/index.html" class="fontMontserrat400 navbar-Footer">Inicio</a>
+        <a href="/pages/servicios.html" class="fontMontserrat400 navbar-Footer">Servicios</a>
+        <a href="/pages/preguntasFrecuentes.html" class="fontMontserrat400 navbar-Footer">Preguntas Frecuentes</a>
+        <a href="/pages/nosotros.html" class=" fontMontserrat400 navbar-Footer">Nosotros</a>
+        <a href="/pages/contacto.html" class="fontMontserrat400 navbar-Footer">Contacto</a>
 
       </div>
       
