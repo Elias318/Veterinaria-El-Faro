@@ -53,6 +53,8 @@
         width: 100.98px;
         display: flex;
         flex-direction: column; }
+        #contenedorServiciosInicio .contenedorIconosServicios-Inicio1 .itemServicios-inicio img {
+          width: 15vw; }
         #contenedorServiciosInicio .contenedorIconosServicios-Inicio1 .itemServicios-inicio .textoIcono {
           margin-top: 20px;
           color: #012559; }

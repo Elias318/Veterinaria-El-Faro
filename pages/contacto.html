@@ -155,11 +155,13 @@
           <div id="formularioContacto">
             <span class="fontMontserrat">ENVIANOS TU CONSULTA</span>
             <div id="contenedor-email">
-              <form action="">
-                <input class="formBasico" type="email" placeholder="Nombre y apellido" maxlength="20" >
-                <input class="formBasico" type="email" placeholder="Escribe tu mail">
-                <textarea class="formBasico formTextBasico" name="" id="" cols="30" rows="10" placeholder="Escribe tu consulta"></textarea>
-                <button class="fontMontserrat btnBlueSm">ENVIAR</button>
+              
+              <form action="https://formsubmit.co/elias.olivencia@gmail.com" method="POST">
+                <input class="formBasico" name="name" id="name" type="text" placeholder="Nombre y apellido" required maxlength="30" >
+                <input class="formBasico" name="email" id="email"  type="email" placeholder="Escribe tu mail" required>
+                <textarea class="formBasico formTextBasico" name="text" id="text" cols="30" rows="10" placeholder="Escribe tu consulta" required></textarea>
+                <button type="submit" class="fontMontserrat btnBlueSm">ENVIAR</button>
+                <input type="hidden" name="_next" value="http://127.0.0.1:5500/">
               </form>
             </div>
           </div>
