@@ -52,7 +52,9 @@
         height: 100%;
         width: 100.98px;
         display: flex;
-        flex-direction: column; }
+        flex-direction: column;
+        justify-content: center;
+        align-items: center; }
         #contenedorServiciosInicio .contenedorIconosServicios-Inicio1 .itemServicios-inicio img {
           width: 15vw; }
         #contenedorServiciosInicio .contenedorIconosServicios-Inicio1 .itemServicios-inicio .textoIcono {
@@ -428,9 +430,11 @@
         height: 100%;
         width: 100.98px;
         display: flex;
-        flex-direction: column; }
+        flex-direction: column;
+        align-items: center;
+        justify-content: center; }
         .contenedor_contenedorIconosServicios-Inicio1 .contenedorIconosServicios-Inicio1 .itemServicios-inicio img {
-          height: 20vh; }
+          width: 10vw; }
         .contenedor_contenedorIconosServicios-Inicio1 .contenedorIconosServicios-Inicio1 .itemServicios-inicio .textoIcono {
           margin-top: 20px; }
           .contenedor_contenedorIconosServicios-Inicio1 .contenedorIconosServicios-Inicio1 .itemServicios-inicio .textoIcono span {
@@ -818,9 +822,11 @@
         height: 100%;
         width: 7vw;
         display: flex;
-        flex-direction: column; }
+        flex-direction: column;
+        justify-content: center;
+        align-items: center; }
         .contenedor_contenedorIconosServicios-Inicio1 .contenedorIconosServicios-Inicio1 .itemServicios-inicio img {
-          height: 9rem; }
+          width: 7vw; }
         .contenedor_contenedorIconosServicios-Inicio1 .contenedorIconosServicios-Inicio1 .itemServicios-inicio .textoIcono {
           margin-top: 20px;
           font-size: 1.3rem;
